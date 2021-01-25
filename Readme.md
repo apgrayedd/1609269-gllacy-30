@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Дима Арефьев](https://up.htmlacademy.ru/htmlcss/30/user/1609269).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
