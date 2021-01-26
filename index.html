@@ -10,29 +10,49 @@
         <a>Gllacy Shop</a>
         <ul>
           <li><a href="#">Каталог</a></li>
+          <div>
+            <ul>
+              <li><a href="#">Новинки</a></li>
+              <li><a href="#">Сливочные</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </div>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
         <a href="#">Поиск</a>
+        <div>
+          <form action="https://echo.htmlacademy.ru" method="GET">
+            <input type="text" name="searcher" placeholder="Крем-брюле">
+          </form>
+        </div>
         <a href="#">Вход</a>
+        <div>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <input type="email" name="email" placeholder="email@example.com">
+            <input type="password" name="password" placeholder="********">
+            <button type="submit">Войти</button>
+          </form>
+          <p><a href="#">Забыли пароль?</a></p>
+          <p><a href="#">Новая регистрация</a></p>
+        </div>
         <a href="#">Корзина</a>
-        <p>с 10 до 20, ежедневно</p>
-        <p><a href="tel:88124502525">8 812 450-25-25</a></p>
       </nav>
+        <p>с 10 до 20, ежедневно <a href="tel:88124502525">8 812 450-25-25</a></p>
     </header>
     <main>
       <h1>Магазин мороженого Gllacy Shop</h1>
       <section>
         <h2>Слайдер</h2>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <img src="img/Мороженко1.png" alt="Мороженко" height="582" width="367">
-          <img src="img/Мороженко2.png" alt="Мороженко" height="523" width="326">
-          <p>Пломбир с помадкой и клубничный щербет</p>
-          <input type="radio" name="slider" value="1">
-          <input type="radio" name="slider" value="2">
-          <input type="radio" name="slider" value="3" checked>
-          <button type="submit">Давайте оба!</button>
-        </form>
+        <img src="img/ice_cream1.png" alt="Мороженко" height="582" width="367">
+        <img src="img/ice_cream2.png" alt="Мороженко" height="523" width="326">
+        <p>Пломбир с помадкой и клубничный щербет</p>
+        <input type="radio" name="slider" value="1">
+        <input type="radio" name="slider" value="2">
+        <input type="radio" name="slider" value="3" checked>
+        <button type="button">Давайте оба!</button>
       </section>
       <section>
         <h2>Акции</h2>
@@ -56,28 +76,28 @@
         <ul>
           <li>
             <a href="#">
-              <img src="img/хит1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" height="267" width="267">
+              <img src="img/hit1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" height="267" width="267">
               <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
               <p>310 ₽<span>/кг</span></p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/хит2.png" alt="Сливочно-кофейное с кусочками шоколада" height="267" width="267">
+              <img src="img/hit2.png" alt="Сливочно-кофейное с кусочками шоколада" height="267" width="267">
               <p>380 ₽<span>/кг</span></p>
               <h3>Сливочно-кофейное с кусочками шоколада</h3>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/хит3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" height="267" width="267">
+              <img src="img/hit3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" height="267" width="267">
               <p>355 ₽<span>/кг</span></p>
               <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/хит4.png" alt="Сливочное крем-брюле с карамельной подливкой" height="267" width="267">
+              <img src="img/hit4.png" alt="Сливочное крем-брюле с карамельной подливкой" height="267" width="267">
               <p>415 ₽<span>/кг</span></p>
               <h3>Сливочное крем-брюле с карамельной подливкой</h3>
             </a>
@@ -125,6 +145,15 @@
         <p><a href="tel:88124502525">8 812 450-25-25</a></p>
         <p>(с 10 до 20 ежедневно)</p>
         <button type="button">Форма обратной связи</button>
+        <div>
+          <p>Мы обязательно вам ответим!</p>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <input type="text" name="name" placeholder="Имя Фамилия">
+            <input type="email" name="email" placeholder="email@example.com">
+            <input type="text" name="message" placeholder="В свободной форме">
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
@@ -148,41 +177,5 @@
       </section>
       <p>Сделано в HTML Academy © 2019</p>
     </footer>
-    <section>
-      <h2>Каталог</h2>
-      <ul>
-        <li><a href="#">Новинки</a></li>
-        <li><a href="#">Сливочные</a></li>
-        <li><a href="#">Щербеты</a></li>
-        <li><a href="#">Фруктовый лед</a></li>
-        <li><a href="#">Мелорин</a></li>
-      </ul>
-    </section>
-    <section>
-      <h2>Личный кабинет</h2>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <input type="email" name="email" placeholder="email@example.com">
-        <input type="password" name="password" placeholder="********">
-        <button type="submit">Войти</button>
-      </form>
-      <p><a href="#">Забыли пароль?</a></p>
-      <p><a href="#">Новая регистрация</a></p>
-    </section>
-    <section>
-      <h2>Поиск по сайту</h2>
-      <form action="https://echo.htmlacademy.ru" method="GET">
-        <input type="text" name="searcher" placeholder="Крем-брюле">
-      </form>
-    </section>
-    <section>
-      <h2>Форма обратной связи</h2>
-      <p>Мы обязательно вам ответим!</p>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <input type="text" name="name" placeholder="Имя Фамилия">
-        <input type="email" name="email" placeholder="email@example.com">
-        <input type="text" name="message" placeholder="В свободной форме">
-        <button type="submit">Отправить</button>
-      </form>
-    </section>
   </body>
 </html>
