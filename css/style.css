@@ -1,0 +1,71 @@
+/*Fonts*/
+@font-face{
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Roboto"),
+        url("../fonts/roboto.woff2") format("woff2"),
+        url("../fonts/roboto.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Roboto Bold"),
+       url("../fonts/robotobold.woff2") format("woff2"),
+       url("../fonts/robotobold.woff") format("woff");
+}
+
+/*Variables*/
+:root{
+  --white:#FFFFFF;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.page{
+  background-color:#9D8B84;
+}
+
+.main-header{
+  font-family: "Roboto Bold";
+  font-size: 16px;
+  line-height: 18px;
+  color:var(--white);
+}
+
+.main-navigation a,
+.main-header .contacts-phone{
+  color:var(--white);
+}
+
+.login-link,
+.basket,
+.catalog-list li:nth-last-child(-n+4)
+{
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.header-contact-info a{
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.header-contact-info{
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.button{
+  color:var(--white);
+  font-size: 18px;
+  line-height: 24px;
+}
