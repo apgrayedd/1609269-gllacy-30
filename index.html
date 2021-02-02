@@ -17,29 +17,31 @@
         <a class="main-header-logo">
           <img src="img/logo.svg" alt="Логотип Gllacy Shop">
         </a>
-        <ul class="site-navigation">
-          <li><a href="catalog.html" class="catalog">Каталог</a>
-              <ul class="catalog-list">
-                <li>
-                  <a href="catalog.html">Новинки</a>
-                </li>
-                <li>
-                  <a href="catalog.html">Сливочные</a>
-                </li>
-                <li>
-                  <a href="catalog.html">Щербеты</a>
-                </li>
-                <li>
-                  <a href="catalog.html">Фруктовый лед</a>
-                </li>
-                <li>
-                  <a href="catalog.html">Мелорин</a>
-                </li>
-              </ul>
-          </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
-        </ul>
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation">
+            <li><a href="catalog.html" class="catalog">Каталог</a>
+                <ul class="catalog-list">
+                  <li>
+                    <a href="catalog.html">Новинки</a>
+                  </li>
+                  <li>
+                    <a href="catalog.html">Сливочные</a>
+                  </li>
+                  <li>
+                    <a href="catalog.html">Щербеты</a>
+                  </li>
+                  <li>
+                    <a href="catalog.html">Фруктовый лед</a>
+                  </li>
+                  <li>
+                    <a href="catalog.html">Мелорин</a>
+                  </li>
+                </ul>
+            </li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
+          </ul>
+        </div>
         <a href="#" class="searcher">
           <img src="img/searcher_icon.svg" alt="" height="16" width="16">
         </a>
@@ -75,16 +77,16 @@
       </section>
       <section class="shares">
         <h2>Акции</h2>
-        <div class="shares-item">
+        <div class="shares-item-1">
           <h3>Акция:"Малинка даром!"</h3>
-          <p>Малинка даром!</p>
+          <p class="heading">Малинка даром!</p>
           <p>При покупке 2 кг любого фруктового мороженого, добавим
             в ваш заказ банку малинового варенья бесплатно.</p>
           <button type="button" class="button">Хочу варенье!</button>
         </div>
-        <div class="shares-item">
+        <div class="shares-item-2">
           <h3>Акция:"Шоколадки даром"</h3>
-          <p>Шоколадки даром!</p>
+          <p class="heading">Шоколадки даром!</p>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку
             вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <button type="button" class="button">Хочу шоколадки!</button>
@@ -172,16 +174,16 @@
         <p><a href="tel:88124502525" class="contacts-phone">8 812 450-25-25</a></p>
         <p>(с 10 до 20 ежедневно)</p>
         <button type="button" class="button">Форма обратной связи</button>
-        <div class="feedback-form">
-          <p>Мы обязательно вам ответим!</p>
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <input type="text" name="name" placeholder="Имя Фамилия">
-            <input type="email" name="email" placeholder="email@example.com">
-            <input type="text" name="message" placeholder="В свободной форме">
-            <button type="submit" class="button">Отправить</button>
-          </form>
-        </div>
       </section>
+      <div class="feedback-form">
+        <p>Мы обязательно вам ответим!</p>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <input type="text" name="name" placeholder="Имя Фамилия">
+          <input type="email" name="email" placeholder="email@example.com">
+          <input type="text" name="message" placeholder="В свободной форме">
+          <button type="submit" class="button">Отправить</button>
+        </form>
+      </div>
     </main>
     <footer class="main-footer">
       <section class="footer-social">
