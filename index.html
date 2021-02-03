@@ -38,12 +38,18 @@
                   </li>
                 </ul>
             </li>
-            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#" class="delivery">Доставка и оплата</a></li>
             <li><a href="#">О компании</a></li>
           </ul>
         </div>
         <a href="#" class="searcher">
-          <img src="img/searcher_icon.svg" alt="" height="16" width="16">
+          <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg" class="search_icon">
+            <circle cx="50%" cy="50%" r="16" stroke="none" fill="none"/>
+            <path d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141
+            6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0
+            01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936
+            4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z"/>
+          </svg>
         </a>
         <div class="searcher-form">
           <form action="https://echo.htmlacademy.ru" method="GET">
@@ -67,13 +73,15 @@
     <main class="container">
       <h1>Магазин мороженого Gllacy Shop</h1>
       <section class="slider">
-        <h2>Слайдер</h2>
-        <img src="img/slider_1.png" alt="Мороженко" height="582" width="639">
-        <p>Пломбир с помадкой и клубничный щербет</p>
-        <input type="radio" name="slider" value="1">
-        <input type="radio" name="slider" value="2">
-        <input type="radio" name="slider" value="3" checked>
-        <button type="button" class="button">Давайте оба!</button>
+        <div class="backlight">
+          <h2>Слайдер</h2>
+          <img src="img/slider_1.png" alt="Мороженко" height="582" width="639">
+          <p>Пломбир с помадкой и клубничный щербет</p>
+          <input type="radio" name="slider" value="1">
+          <input type="radio" name="slider" value="2">
+          <input type="radio" name="slider" value="3" checked>
+          <button type="button" class="button">Давайте оба!</button>
+        </div>
       </section>
       <section class="shares">
         <h2>Акции</h2>
@@ -92,31 +100,31 @@
           <button type="button" class="button">Хочу шоколадки!</button>
         </div>
       </section>
-      <section class="bestseller">
+      <section class="product">
         <h2>Хиты продаж</h2>
-        <ul class="bestseller-list">
-          <li class="bestseller-item">
+        <ul class="product-list">
+          <li class="product-item">
             <a href="#">
               <img src="img/ice_cream_1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" height="267" width="267">
               <p>310 ₽<span>/кг</span></p>
               <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             </a>
           </li>
-          <li class="bestseller-item">
+          <li class="product-item">
             <a href="#">
               <img src="img/ice_cream_2.jpg" alt="Сливочно-кофейное с кусочками шоколада" height="267" width="267">
               <p>380 ₽<span>/кг</span></p>
               <h3>Сливочно-кофейное с кусочками шоколада</h3>
             </a>
           </li>
-          <li class="bestseller-item">
+          <li class="product-item">
             <a href="#">
               <img src="img/ice_cream_3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" height="267" width="267">
               <p>355 ₽<span>/кг</span></p>
               <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             </a>
           </li>
-          <li class="bestseller-item">
+          <li class="product-item">
             <a href="#">
               <img src="img/ice_cream_4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" height="267" width="267">
               <p>415 ₽<span>/кг</span></p>
@@ -157,14 +165,16 @@
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </section>
       <section class="mailing">
-        <h2>Рассылка</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе
-          всего самого вкусного, что у нас происходит. Обещаем не спамить
-          и не слать всякой ненужной ерунды. Честно =)</p>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <input type="text" name="mailing" placeholder="email@example.com">
-          <button type="submit" class="button">Отправить</button>
-        </form>
+        <div class="mail_background">
+          <h2>Рассылка</h2>
+          <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе
+            всего самого вкусного, что у нас происходит. Обещаем не спамить
+            и не слать всякой ненужной ерунды. Честно =)</p>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <input type="text" name="mailing" placeholder="email@example.com">
+            <button type="submit" class="button">Отправить</button>
+          </form>
+       </div>
       </section>
       <section class="info_and_map">
         <h2>Как нас найти</h2>
@@ -183,6 +193,7 @@
           <input type="text" name="message" placeholder="В свободной форме">
           <button type="submit" class="button">Отправить</button>
         </form>
+        <button type="submit" class="close">Закрыть</button>
       </div>
     </main>
     <footer class="main-footer">

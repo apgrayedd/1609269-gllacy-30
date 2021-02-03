@@ -8,6 +8,14 @@
         url("../fonts/roboto.woff") format("woff");
 }
 @font-face {
+  font-family: "Roboto Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Roboto Bold"),
+       url("../fonts/robotobold.woff2") format("woff2"),
+       url("../fonts/robotobold.woff") format("woff");
+}
+@font-face {
   font-family: "Roboto Bold";
   font-weight: 700;
   font-style: normal;
@@ -24,6 +32,8 @@
 
   --header-menu-hover: #FBDED7;
   --header-menu-focus: #F6B5A5;
+
+  --link-hover: #E84D37;
 
   --first-background: #9D8B84;
   --second-background: #8996A6;
@@ -49,26 +59,38 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-button{
+ul{
+  list-style: none;
+}
+.button{
+  color: var(--white);
   background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
   border: none;
+}
+.button:hover{
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+}
+.button:focus{
+  background: linear-gradient(0deg, rgba(201, 152, 152, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  box-shadow: inset 0px 2px 2px #942718;
+  outline: none;
 }
 /*Header*/
 .main-navigation{
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
-
 }
 
-.site-navigation,
-.catalog-list {
-  list-style: none;
+.site-navigation>li>a{
+  display: inline-block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--white);
 }
 
-.site-navigation a:not([href]){
-  background-color: var(--gray);
+.site-navigation>li>a:nth-last-child(1):hover{
+  color: var(--link-hover);
+  border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
 
 .header-contact-info a{
@@ -76,61 +98,95 @@ button{
   line-height: 24px;
 }
 
-.button,
-.site-navigation a,
-.basket,
 .header-contact-info .contacts-phone{
   color: var(--white);
 }
 
-.catalog-list li a{
-  color:var(--black);
-}
-
-
-.site-navigation a:hover{
-  background-color: var(--header-menu-hover);
-}
-
-.site-navigation a:focus{
-  background-color: var(--header-menu-focus);
-}
-
-.catalog:hover,
-.site-navigation li a:hover{
-  color: var(--black);
-}
-
-.catalog-list li,
-.basket,
 .header-contact-info{
   font-size: 14px;
   line-height: 16px;
 }
+/*Catalog*/
+.catalog{
+  height: 31px;
+  width: 87px;
+  display: inline-block;
+}
+.catalog:hover{
+  border-radius: 26px;
+  background: var(--white);
+  color: var(--black);
+}
+.catalog:focus{
+  background: #EDEDED;
+  box-shadow: inset 0px 2px 1px #696969;
+}
+.catalog-list{
+  width: 143px;
+  height: 171px;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: var(--white);
 
-.catalog-list li:nth-last-child(-n+4),
-.basket{
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+.catalog-list{
+  padding-left: 0;
+  margin-left: 0;
+}
+.catalog-list li{/////**Продоллжить здесь
+  height: 37px;
+}
+.catalog-list li a{
+  display: inline-block;
+  width: 143px;
+  height: 27px;
+  color:var(--black);
+}
+.catalog-list li:nth-last-child(-n+4){
   font-family: "Roboto";
 }
-
 .catalog-list li:first-child{
   line-height: 18px;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+}
+.catalog-list li a:hover{
+  background: #FBDED7;
+}
+.catalog-list li a:focus{
+  background: #F6B5A5;
 }
 /*login*/
 .login-link{
-  font-family: "Roboto";
+  display: inline-block;
+
+  width: 92px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Roboto Medium";
   color: var(--white);
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+.login-link:hover{
+  background: var(--white);
+  color: var(--black);
 }
 .login-link-form{
   height:241px;
   width:277px;
   background: #F8F7F4;
   border-radius: 6px;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
 }
 .login-link-form a{
   color: var(--black);
   font-size: 13px;
   line-height: 15px;
+  border-bottom:1px solid rgba(50, 50, 50, 0.3);
 }
 .login-link-form input{
   height: 44px;
@@ -140,17 +196,56 @@ button{
   border-radius: 4px;
   border: 1px solid #D3D3D2;
 }
+.login-link-form input:hover{
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  border-radius: 4px;
+}
 .login-link-form button{
   height: 44px;
   width: 103px;
   border-radius: 26px;
 }
+/*Basket*/
+.basket{
+  display: inline-block;
+
+  width: 100px;
+  height: 32px;
+  font-family: "Roboto Medium";
+  font-size: 14px;
+  line-height: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: var(--white);
+}
+.basket:hover{
+  color: var(--black);
+  background-color: var(--white);
+}
 /*Searcher*/
+.searcher{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+.searcher:hover{
+  background:var(--white);
+  fill: var(--black);
+}
+.search_icon{
+  fill: var(--white);
+}
+.search_icon:hover{
+  fill: var(--black);
+}
 .searcher-form{
   height: 84px;
   width: 349px;
   background: #F8F7F4;
   border-radius: 4px;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .searcher-form input{
@@ -161,17 +256,24 @@ button{
   border: 1px solid #D3D3D2;
   border-radius: 4px;
 }
+.searcher-form input:hover{
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  border-radius: 4px;
+}
 /*Slider*/
 .slider{
   width: 100%;
   height: auto;
 }
+
 .slider button{
   width: 278px;
   height: 63px;
+  font-size: 32px;
+  line-height: 44px;
   border-radius: 70px;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
-
 .slider p{
   font-size: 60px;
   line-height: 60px;
@@ -211,34 +313,41 @@ button{
   border-radius: 70px;
 }
 
-/*Bestseller*/
-
-.bestseller-list{
-  list-style: none;
+/*product*/
+.product-item {
+  width: 293px;
+  height: 460px; /*402*/
 }
 
-.bestseller-item a h3{
-  font-family: "Roboto";
-}
-
-.bestseller-item img{
-  border-radius: 50%;
-}
-
-.bestseller-item a{
+.product-item a{
   color: var(--white);
 }
 
-.bestseller-item p{
-  font-size: 45px;
-  line-height: 45px;;
+.product-item:hover{
+  background-color:  rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
-.bestseller-item span{
+.product-item h3{
+  display: inline;
+  font-family: "Roboto Medium";
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.product-item img{
+  border-radius: 50%;
+}
+
+.product-item p{
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.product-item span{
   font-size: 30px;
   line-height: 35px;
 }
-
 /*Information*/
 .information{
   background-image: url("../img/pattern.png");
@@ -250,15 +359,13 @@ button{
   font-size: 24px;
   line-height: 30px;
   color: var(--black);
-}
-
-.information-list{
-  list-style: none;
+  font-family: "Roboto Medium";
 }
 
 .information li p{
   font-size: 16px;
   line-height: 22px;
+  font-family: "Roboto";
 }
 
 /*News*/
@@ -268,6 +375,7 @@ button{
   border-radius: 16px;
   width: 560px;
   height: 220px;
+  color: var(--black);
 }
 
 .news a{
@@ -278,7 +386,6 @@ button{
 
 .news h2{
   font-family: "Roboto";
-  color: var(--black);
   font-size: 16px;
   line-height: 22px;
 }
@@ -290,6 +397,29 @@ button{
   background-repeat: no-repeat;
   width: 560px;
   height: 220px;
+}
+
+.mail_background{
+  width: 548px;
+  height: 210px;
+  background: #F8F7F4;
+  border-radius: 16px;
+}
+
+.mailing p{
+  font-family: "Roboto";
+}
+.mailing input{
+  width: 368px;
+  height: 44px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.mailing input:hover{
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  border-radius: 4px;
 }
 .mailing button{
   width: 130px;
@@ -349,13 +479,18 @@ button{
   width: 428px;
   height: 154px;
 }
+.feedback-form input:hover{
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  border-radius: 4px;
+}
 .feedback-form p{
   font-size: 24px;
   line-height: 28px;
-  font-family: "Roboto";
+  font-family: "Roboto Medium";
+  color: var(--black);
 }
 
-.feedback-form button{
+.feedback-form .button{
   width: 140px;
   height: 44px;
 
@@ -368,21 +503,26 @@ button{
 }
 
 .footer-social ul{
-  list-style: none;
-}
-
-.footer-info ul{
-  list-style: none;
+  padding-left: 0;
 }
 
 .footer-info a{
   color: var(--white);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer-info a:hover{
+  border-bottom: 1px solid rgba(232, 77, 55, 0.3);
+  color: var(--link-hover);
 }
 
 .footer-info{
   font-family: "Roboto";
   font-size: 13px;
   line-height: 18px;
+}
+
+.footer-info ul{
+  padding-left: 0;
 }
 
 .footer-info li:nth-of-type(1){
