@@ -38,6 +38,11 @@
   --first-background: #9D8B84;
   --second-background: #8996A6;
   --third-background: #849D8F;
+
+  --form-background: #F8F7F4;
+
+  --catelog-focus:#EDEDED;
+  --catalog-selected:#D07058;
 }
 
 .page{
@@ -119,12 +124,12 @@ ul{
 }
 .catalog:focus{
   height: 31px;
-  background: #EDEDED;
+  background: var(--catelog-focus);
   box-shadow: inset 0px 2px 1px #696969;
   border-radius: 26px;
 }
 .catalog-selected{
-  background: #D07058;
+  background: var(--catalog-selected);
   height: 31px;
   border-radius: 26px;
 }
@@ -154,13 +159,13 @@ ul{
   color:var(--black);
 }
 .catalog-item:hover{
-  background: #FBDED7;
+  background: var(--header-menu-hover);
 }
 .catalog-item a:focus{
-  background: #F6B5A5;
+  background: var(--header-menu-focus);
 }
 .catalog-item-selected{
-  background: #D07058;
+  background: var(--catalog-selected);
 }
 .catalog-item-selected a{
   color: var(--white);
@@ -186,7 +191,7 @@ ul{
 .login-link-form{
   height:241px;
   width:277px;
-  background: #F8F7F4;
+  background: var(--form-background);
   border-radius: 6px;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
 }
@@ -233,7 +238,7 @@ ul{
 .basket-form{
   width: 539px;
   height: 242px;
-  background: #F8F7F4;
+  background: var(--form-background);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   color: var(--black);
@@ -297,7 +302,7 @@ ul{
 .searcher-form{
   height: 84px;
   width: 349px;
-  background: #F8F7F4;
+  background: var(--form-background);
   border-radius: 4px;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
 }
@@ -471,7 +476,7 @@ ul{
 .mail_background{
   width: 548px;
   height: 210px;
-  background: #F8F7F4;
+  background: var(--form-background);
   border-radius: 16px;
 }
 
@@ -498,7 +503,7 @@ ul{
 
 /*Map*/
 .info_and_map{
-  background-color: #FEFEFE;
+  background-color: var(--form-background);
   border-radius: 16px;
   color: var(--black);
   height: 303px;
@@ -531,7 +536,7 @@ ul{
 .feedback-form{
   width: 477px;
   height: 441px;
-  background-color: #F8F7F4;
+  background-color: var(--form-background);
   border-radius: 6px;
 }
 
