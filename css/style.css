@@ -41,7 +41,7 @@
 
   --form-background: #F8F7F4;
 
-  --catelog-focus:#EDEDED;
+  --catalog-focus:#EDEDED;
   --catalog-selected:#D07058;
 }
 
@@ -117,25 +117,25 @@ ul{
   display: inline-block;
 }
 .catalog:hover{
-  height: 31px;
+  min-height: 31px;
   background: var(--white);
   color: var(--black);
   border-radius: 26px;
 }
 .catalog:focus{
-  height: 31px;
-  background: var(--catelog-focus);
+  min-height: 31px;
+  background: var(--catalog-focus);
   box-shadow: inset 0px 2px 1px #696969;
   border-radius: 26px;
 }
 .catalog-selected{
   background: var(--catalog-selected);
-  height: 31px;
+  min-height: 31px;
   border-radius: 26px;
 }
 .catalog-list{
   width: 143px;
-  height: 171px;
+  min-height: 171px;
   font-size: 14px;
   line-height: 16px;
   background-color: var(--white);
@@ -175,7 +175,7 @@ ul{
   display: inline-block;
 
   width: 92px;
-  height: 32px;
+  min-height: 32px;
   font-size: 14px;
   line-height: 16px;
   font-family: "Roboto Medium";
@@ -189,7 +189,7 @@ ul{
   color: var(--black);
 }
 .login-link-form{
-  height:241px;
+  min-height:241px;
   width:277px;
   background: var(--form-background);
   border-radius: 6px;
@@ -202,7 +202,7 @@ ul{
   border-bottom:1px solid rgba(50, 50, 50, 0.3);
 }
 .login-link-form input{
-  height: 44px;
+  min-height: 44px;
   width: 241px;
   margin-right: auto;
   margin-left: auto;
@@ -214,7 +214,7 @@ ul{
   border-radius: 4px;
 }
 .login-link-form button{
-  height: 44px;
+  min-height: 44px;
   width: 103px;
   border-radius: 26px;
 }
@@ -223,7 +223,7 @@ ul{
   display: inline-block;
 
   width: 100px;
-  height: 32px;
+  min-height: 32px;
   font-family: "Roboto Medium";
   font-size: 14px;
   line-height: 16px;
@@ -237,7 +237,7 @@ ul{
 }
 .basket-form{
   width: 539px;
-  height: 242px;
+  min-height: 242px;
   background: var(--form-background);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
@@ -255,7 +255,7 @@ ul{
 }
 .basket-form>button{
   width: 172px;
-  height: 44px;
+  min-height: 44px;
   box-shadow: 0px 1px 2px rgba(172, 16, 0, 0.25);
   border-radius: 26px;
   font-size: 18px;
@@ -285,7 +285,7 @@ ul{
 .searcher{
   display: inline-block;
   width: 32px;
-  height: 32px;
+  min-height: 32px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
 }
@@ -293,14 +293,14 @@ ul{
   background:var(--white);
   fill: var(--black);
 }
-.search_icon{
+.search-icon{
   fill: var(--white);
 }
-.search_icon:hover{
+.search-icon:hover{
   fill: var(--black);
 }
 .searcher-form{
-  height: 84px;
+  min-height: 84px;
   width: 349px;
   background: var(--form-background);
   border-radius: 4px;
@@ -309,7 +309,7 @@ ul{
 
 .searcher-form input{
   width: 311px;
-  height: 44px;
+  min-height: 44px;
   font-size: 14px;
   line-height: 16px;
   border: 1px solid #D3D3D2;
@@ -342,7 +342,7 @@ ul{
 
 .slider button{
   width: 278px;
-  height: 63px;
+  min-height: 63px;
   font-size: 32px;
   line-height: 44px;
   border-radius: 70px;
@@ -367,7 +367,7 @@ ul{
   background-repeat: no-repeat;
   border-radius: 16px;
   width: 560px;
-  height: 229px;
+  min-height: 229px;
 }
 
 .shares p{
@@ -383,14 +383,14 @@ ul{
   font-size: 18px;
   line-height: 24px;
   width: 191px;
-  height: 48px;
+  min-height: 48px;
   border-radius: 70px;
 }
 
 /*product*/
 .product-item {
   width: 293px;
-  height: 460px; /*402*/
+  min-height: 460px; /*402*/
 }
 
 .product-item a{
@@ -448,7 +448,7 @@ ul{
   background-repeat: no-repeat;
   border-radius: 16px;
   width: 560px;
-  height: 220px;
+  min-height: 220px;
   color: var(--black);
 }
 
@@ -470,12 +470,12 @@ ul{
   background-image: url("../img/mail_background.png");
   background-repeat: no-repeat;
   width: 560px;
-  height: 220px;
+  min-height: 220px;
 }
 
-.mail_background{
+.mail-background{
   width: 548px;
-  height: 210px;
+  min-height: 210px;
   background: var(--form-background);
   border-radius: 16px;
 }
@@ -485,7 +485,7 @@ ul{
 }
 .mailing input{
   width: 368px;
-  height: 44px;
+  min-height: 44px;
   border: 1px solid rgba(178, 178, 178, 0.52);
   box-sizing: border-box;
   border-radius: 6px;
@@ -497,45 +497,45 @@ ul{
 }
 .mailing button{
   width: 130px;
-  height: 44px;
+  min-height: 44px;
   border-radius: 70px;
 }
 
 /*Map*/
-.info_and_map{
+.info-and-map{
   background-color: var(--form-background);
   border-radius: 16px;
   color: var(--black);
-  height: 303px;
+  min-height: 303px;
   width: 306px;
 }
 
-.info_and_map a{
+.info-and-map a{
   color: var(--black);
 }
 
-.info_and_map p:nth-of-type(1),
-.info_and_map p:nth-of-type(3),
-.info_and_map p:nth-of-type(5){
+.info-and-map p:nth-of-type(1),
+.info-and-map p:nth-of-type(3),
+.info-and-map p:nth-of-type(5){
   font-family: "Roboto";
   font-size: 14px;
   line-height: 20px;
 }
 
-.info_and_map p:nth-of-type(2n){
+.info-and-map p:nth-of-type(2n){
   font-size: 18px;
   line-height: 24px;
 }
 
-.info_and_map button{
+.info-and-map button{
   width: 253px;
-  height: 43px;
+  min-height: 43px;
   border-radius: 70px;
 }
 
 .feedback-form{
   width: 477px;
-  height: 441px;
+  min-height: 441px;
   background-color: var(--form-background);
   border-radius: 6px;
 }
@@ -547,11 +547,11 @@ ul{
 .feedback-form input:nth-child(1),
 .feedback-form input:nth-child(2){
   width: 267px;
-  height: 44px;
+  min-height: 44px;
 }
 .feedback-form input:nth-child(3){
   width: 428px;
-  height: 154px;
+  min-height: 154px;
 }
 .feedback-form input:hover{
   border: 2px solid rgba(46, 136, 228, 0.52);
@@ -566,7 +566,7 @@ ul{
 
 .feedback-form .button{
   width: 140px;
-  height: 44px;
+  min-height: 44px;
 
   border-radius: 70px;
 }
@@ -588,7 +588,7 @@ ul{
 }
 .sorting{
   width: 196px;
-  height: 36px;
+  min-height: 36px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   color:var(--white);
@@ -600,7 +600,7 @@ ul{
 /*Range*/
 .range-wrapper{
   width: 176px;
-  height: 36px;
+  min-height: 36px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
 }
@@ -623,7 +623,7 @@ ul{
 /*Filter-button*/
 .filter-button{
   width: 144px;
-  height: 36px;
+  min-height: 36px;
   color: var(--white);
   background: rgba(255, 255, 255, 0.2);
   border: 2px solid var(--white);
@@ -643,7 +643,7 @@ ul{
 .pagination-list a{
   display: block;
   width: 26px;
-  height: 26px;
+  min-height: 26px;
   border-radius: 50%;
   color: var(--white);
 }
@@ -663,7 +663,7 @@ ul{
 }
 /*Footer*/
 .footer{
-  height: 103px;
+  min-height: 103px;
 }
 
 .footer-social ul{
@@ -672,7 +672,7 @@ ul{
 .footer-social a{
   display: block;
   width:32px;
-  height:32px;
+  min-height:32px;
   border-radius: 50%;
   border:2px solid rgba(255, 255, 255, 0.5);
 }
