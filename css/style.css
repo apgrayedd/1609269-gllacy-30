@@ -11,9 +11,9 @@
   font-family: "Roboto Medium";
   font-weight: 500;
   font-style: normal;
-  src: local("Roboto Bold"),
-       url("../fonts/robotobold.woff2") format("woff2"),
-       url("../fonts/robotobold.woff") format("woff");
+  src: local("Roboto Medium"),
+       url("../fonts/robotomedium.woff2") format("woff2"),
+       url("../fonts/robotomedium.woff") format("woff");
 }
 @font-face {
   font-family: "Roboto Bold";
@@ -672,7 +672,7 @@ ul{
 .footer-social a{
   display: block;
   width:32px;
-  min-height:32px;
+  height:32px;
   border-radius: 50%;
   border:2px solid rgba(255, 255, 255, 0.5);
 }
