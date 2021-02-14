@@ -54,6 +54,13 @@
   line-height: 22px;
   color: var(--white);
   background-color: var(--first-background);
+
+  height: 100%;
+}
+.page-body{
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 a {
@@ -81,6 +88,15 @@ ul{
   outline: none;
 }
 /*Header*/
+.main-header{
+  margin-bottom: 70px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+.main-header-logo{
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
 .main-navigation{
   font-size: 16px;
   line-height: 18px;
@@ -662,7 +678,7 @@ ul{
   color: var(--black);
 }
 /*Footer*/
-.footer{
+footer{
   min-height: 103px;
 }
 
