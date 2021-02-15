@@ -98,8 +98,6 @@ ul{
   line-height: 18px;
   color: var(--white);
 }
-.main-header-logo{
-}
 .main-header-bar{
   background-color: var(--first-background);
 }
@@ -202,8 +200,6 @@ ul{
   color: var(--white);
 }
 /*login*/
-.login{
-}
 .login-link{
   display: inline-block;
 

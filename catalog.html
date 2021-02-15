@@ -14,99 +14,73 @@
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo">
-          <img src="img/logo.svg" alt="Логотип Gllacy Shop">
-        </a>
-        <div class="main-navigation-wrapper">
-          <ul class="site-navigation">
-            <li><a class="catalog catalog-selected">Каталог</a>
-                <ul class="catalog-list">
-                  <li class="catalog-item">
-                    <a href="#">Новинки</a>
-                  </li>
-                  <li class="catalog-item catalog-item-selected">
-                    <a>Сливочные</a>
-                  </li>
-                  <li class="catalog-item">
-                    <a href="#">Щербеты</a>
-                  </li>
-                  <li class="catalog-item">
-                    <a href="#">Фруктовый лед</a>
-                  </li>
-                  <li class="catalog-item">
-                    <a href="#">Мелорин</a>
-                  </li>
-                </ul>
-            </li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О компании</a></li>
-          </ul>
-        </div>
-        <a href="#" class="searcher">
-          <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon">
-            <circle cx="50%" cy="50%" r="16" stroke="none" fill="none"/>
-            <path d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141
-            6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0
-            01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936
-            4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z"/>
-          </svg>
-        </a>
-        <div class="searcher-form">
-          <form action="https://echo.htmlacademy.ru" method="GET">
-            <input type="text" name="searcher" placeholder="Крем-брюле">
-          </form>
-        </div>
-        <a href="#" class="login-link">Вход</a>
-        <div class="login-link-form">
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <input type="email" name="email" placeholder="email@example.com">
-            <input type="password" name="password" placeholder="********">
-            <button type="submit" class="button">Войти</button>
-          </form>
-          <p><a href="#">Забыли пароль?</a></p>
-          <p><a href="#">Новая регистрация</a></p>
-        </div>
-        <a href="#" class="basket">2 товара</a>
-        <div class="basket-form">
-            <table>
-                <tr>
-                    <td>
-                      <button type="button" class="close">Удалить</button>
-                    </td>
-                    <td>
-                      <a href="#">
-                        <img src="img/ice_cream_1.jpg" alt="Пломбир с апельсиновым джемом" height="33" width="33">
-                      </a>
-                    </td>
-                    <td>
-                      <a href="#">Пломбир с апельсиновым джемом</a>
-                    </td>
-                    <td>1,5кг х <span>200 руб.</span></td>
-                    <td>300 руб.</td>
-                </tr>
-                <tr>
-                    <td>
-                      <button type="button" class="close">Удалить</button>
-                    </td>
-                    <td>
-                      <a href="#">
-                        <img src="img/ice_cream_3.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" height="33" width="33">
-                      </a>
-                    </td>
-                    <td>
-                      <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
-                    </td>
-                    <td>1,5кг х <span>300 руб.</span></td>
-                    <td>450 руб.</td>
-                </tr>
-            </table>
-            <p>Итого: 750 руб.</p>
-            <button type="button" class="button">Оформить заказ</button>
+        <div class="main-header-bar">
+          <div class="main-navigation-wrapper">
+            <a class="main-header-logo" href="index.html">
+              <img src="img/logo.svg" alt="Логотип Gllacy Shop">
+            </a>
+            <ul class="site-navigation">
+              <li><a href="catalog.html" class="catalog">Каталог</a>
+                  <ul class="catalog-list">
+                    <li class="catalog-item">
+                      <a href="catalog.html">Новинки</a>
+                    </li>
+                    <li class="catalog-item">
+                      <a href="catalog.html">Сливочные</a>
+                    </li>
+                    <li class="catalog-item">
+                      <a href="catalog.html">Щербеты</a>
+                    </li>
+                    <li class="catalog-item">
+                      <a href="catalog.html">Фруктовый лед</a>
+                    </li>
+                    <li class="catalog-item">
+                      <a href="catalog.html">Мелорин</a>
+                    </li>
+                  </ul>
+              </li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">О компании</a></li>
+            </ul>
+            <div class="search">
+              <a href="#" class="searcher">
+                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon">
+                  <circle cx="50%" cy="50%" r="16" stroke="none" fill="none"/>
+                  <path d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141
+                  6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0
+                  01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936
+                  4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z"/>
+                </svg>
+              </a>
+              <div class="searcher-form">
+                <form action="https://echo.htmlacademy.ru" method="GET">
+                  <input type="text" name="searcher" placeholder="Крем-брюле">
+                </form>
+              </div>
+            </div>
+            <div class="login">
+              <a href="#" class="login-link">Вход</a>
+              <div class="login-link-form">
+                <form action="https://echo.htmlacademy.ru" method="POST">
+                  <input type="email" name="email" placeholder="email@example.com">
+                  <input type="password" name="password" placeholder="********">
+                  <button type="submit" class="button">Войти</button>
+                </form>
+                <p><a href="#">Забыли пароль?</a></p>
+                <p><a href="#">Новая регистрация</a></p>
+              </div>
+            </div>
+            <div class="basket">
+              <a href="#" class="basket-icon">Пусто</a>
+            </div>
+            <div class="contact-info">
+              <p class="header-contact-info">с 10 до 20, ежедневно <br> <a href="tel:88124502525" class="contacts-phone">8 812 450-25-25</a></p>
+            </div>
+          </div>
         </div>
       </nav>
-        <p class="header-contact-info">с 10 до 20, ежедневно <a href="tel:88124502525" class="contacts-phone">8 812 450-25-25</a></p>
     </header>
-    <main>
+    <main class="container">
     <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
