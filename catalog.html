@@ -107,6 +107,7 @@
             </fieldset>
             <fieldset class="filter-option filter-radio">
                 <legend>Жирность</legend>
+                <div class="filter-radio-back">
                   <input type="radio" name="fat" id="fat-0" value="0">
                   <label for="fat-0">0%</label>
                   <input type="radio" name="fat" id="fat-under-10" value="under_10" checked>
@@ -115,9 +116,11 @@
                   <label for="fat-under-30">до 30%</label>
                   <input type="radio" name="fat" id="fat-more-30" value="more_30">
                   <label for="fat-more-30">выше 30%</label>
+                </div>
             </fieldset>
             <fieldset class="filter-option filter-check-box">
                 <legend>Наполнители</legend>
+                <div class="filter-check-box-back">
                   <input type="checkbox" name="filling" id="filling-chocolate" value="chocolate" checked>
                   <label for="filling-chocolate">шоколадные</label>
                   <input type="checkbox" name="filling" id="filling-sugar-topping" value="sugar-topping" checked>
@@ -128,6 +131,7 @@
                   <label for="filling-syrups">сиропы</label>
                   <input type="checkbox" name="filling" id="filling-jams" value="jams">
                   <label for="filling-jams">сиропы</label>
+                </div>
             </fieldset>
             <button type="submit" class="filter-button">Применить</button>
         </form>
