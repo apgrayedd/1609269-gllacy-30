@@ -435,7 +435,7 @@ ul{
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr;
   justify-content: center;
-  column-gap: 26px;
+  gap: 26px;
   padding: 0;
 }
 .product-item {
