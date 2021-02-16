@@ -76,16 +76,16 @@
             <div class="contact-info">
               <p class="header-contact-info">с 10 до 20, ежедневно <br> <a href="tel:88124502525" class="contacts-phone">8 812 450-25-25</a></p>
             </div>
+            <ul class="breadcrumbs">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a>Сливочное</a></li>
+          </ul>
           </div>
         </div>
       </nav>
     </header>
     <main class="container">
-    <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a>Сливочное</a></li>
-    </ul>
     <h1>Сливочное мороженое</h1>
     <section class="filters">
         <h2>Фильтр</h2>
@@ -105,9 +105,8 @@
                   <input type="range" id="price" name="price" min="0" max="1000" value="100" step="25">
                 </div>
             </fieldset>
-            <fieldset class="filter-option">
+            <fieldset class="filter-option filter-radio">
                 <legend>Жирность</legend>
-                <div class="filter-radio">
                   <input type="radio" name="fat" id="fat-0" value="0">
                   <label for="fat-0">0%</label>
                   <input type="radio" name="fat" id="fat-under-10" value="under_10" checked>
@@ -116,11 +115,9 @@
                   <label for="fat-under-30">до 30%</label>
                   <input type="radio" name="fat" id="fat-more-30" value="more_30">
                   <label for="fat-more-30">выше 30%</label>
-                </div>
             </fieldset>
-            <fieldset class="filter-option">
+            <fieldset class="filter-option filter-check-box">
                 <legend>Наполнители</legend>
-                <div class="filter-check-box">
                   <input type="checkbox" name="filling" id="filling-chocolate" value="chocolate" checked>
                   <label for="filling-chocolate">шоколадные</label>
                   <input type="checkbox" name="filling" id="filling-sugar-topping" value="sugar-topping" checked>
@@ -131,7 +128,6 @@
                   <label for="filling-syrups">сиропы</label>
                   <input type="checkbox" name="filling" id="filling-jams" value="jams">
                   <label for="filling-jams">сиропы</label>
-                </div>
             </fieldset>
             <button type="submit" class="filter-button">Применить</button>
         </form>
