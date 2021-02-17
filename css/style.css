@@ -410,7 +410,7 @@ ul{
   background-repeat: no-repeat;
   border-radius: 16px;
   width: 560px;
-  min-height: 229px;
+  height: 229px;
 }
 
 .shares p{
@@ -768,6 +768,11 @@ footer{
   padding-bottom: 26px;
   padding-left: 29px;
   padding-right: 27px;
+}
+.footer-center{
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 10px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
