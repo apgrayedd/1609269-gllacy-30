@@ -92,21 +92,28 @@ ul{
   margin-bottom: 70px;
 }
 .main-navigation{
-  display:grid;
-
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
 }
+.main-navigation-wrapper{
+  width: 100%;
+}
 .main-header-bar{
   background-color: var(--first-background);
 }
-.main-navigation-wrapper{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+.main-navigation{
+  display: flex;
+  flex-direction: column;
+}
+.header-container{
   width: 1146px;
   margin: 0 auto;
   padding: 0 10px;
+
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .site-navigation{
   margin: 0;
@@ -124,8 +131,7 @@ ul{
 }
 .contact-info{
   order: 1;
-  grid-column: 5;
-  grid-row: 2;
+  margin-left: auto;
 }
 .header-contact-info{
   font-size: 14px;
@@ -144,6 +150,7 @@ ul{
 .catalog{
   width: 87px;
   display: inline-block;
+  margin-right: auto;
 }
 .catalog:hover{
   min-height: 31px;
@@ -248,8 +255,6 @@ ul{
   border-radius: 26px;
 }
 /*Basket*/
-.basket{
-}
 .basket-icon{
   display: inline-block;
 
@@ -313,6 +318,9 @@ ul{
   font-family: "Roboto Bold";
 }
 /*Searcher*/
+.search{
+  margin-left: auto;
+}
 .searcher{
   display: inline-block;
   width: 32px;
@@ -391,18 +399,21 @@ ul{
 }
 /*Shares*/
 .shares{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 26px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shares h2{
+  display:block;
+  width: 100%;
 }
 .shares-item-1{
   background-image: url("../img/crimson_background.jpg");
-  grid-column: 1;
 }
 
 .shares-item-2{
   background-image: url("../img/chocolate_background.jpg");
-  grid-column: 2;
 }
 
 .shares-item-1,
@@ -432,10 +443,10 @@ ul{
 
 /*product*/
 .product-list{
-  display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
-  justify-content: center;
-  gap: 26px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0;
 }
 .product-item {
@@ -478,11 +489,15 @@ ul{
   border-radius: 16px;
 }
 .information-list{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 13px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding-left: 49px;
   padding-right: 23px;
+}
+.information-item{
+  width: 485px;
 }
 .information p,
 .information h2{
@@ -499,8 +514,9 @@ ul{
 }
 /*Index columns*/
 .index-columns{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 /*News*/
 .news{
@@ -761,7 +777,7 @@ ul{
   color: var(--black);
 }
 /*Footer*/
-footer{
+.main-footer{
   min-height: 103px;
   padding-top:60px;
   padding-bottom: 26px;
@@ -773,14 +789,16 @@ footer{
   margin: 0 auto;
   padding: 0 10px;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-social{
+  width: 164px;
 }
 .footer-social ul{
   display: flex;
-  gap: 12px;
-}
-.footer-social ul{
+  justify-content: space-between;
   padding-left: 0;
 }
 .footer-social a{
@@ -803,7 +821,7 @@ footer{
   font-family: "Roboto";
   font-size: 13px;
   line-height: 18px;
-  justify-self: center;
+  width: 327px;
 }
 .footer-info a{
   color: var(--white);
@@ -816,10 +834,15 @@ footer{
 
 .footer-info ul{
   padding-left: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
-
+.footer-info li{
+  display: inline;
+  width: 162px;
+}
 .footer-info li:nth-of-type(1){
   font-family: "Roboto Bold";
 }
