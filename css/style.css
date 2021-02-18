@@ -452,7 +452,7 @@ ul{
 }
 .product-item {
   width: 267px;
-  min-height: 402px; /*402*/
+  min-height: 402px;
   margin-bottom: 40px;
   margin-right: 26px;
 }
@@ -471,20 +471,37 @@ ul{
 
 .product-item h3{
   display: inline;
+  margin-top: 17px;
   font-family: "Roboto Medium";
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  text-align: center;
 }
+.product-img-svg{
+  height: 61px;
+  width: 61px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
 
+  margin-bottom: -61px;
+  position: absolute;
+  z-index: 1;
+}
+.product-img-svg svg{
+  margin-left: 14px;
+  margin-top: 17px;
+
+}
 .product-item img{
   border-radius: 50%;
   height: 267px;
   width: 267px;
+
+  margin-bottom: -110px;
 }
 
 .product-item p{
   font-size: 45px;
   line-height: 45px;
+  margin-bottom: 17px;
 }
 
 .product-item span{
