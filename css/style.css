@@ -62,7 +62,23 @@
 
   min-height: 100%;
 }
-
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.center{
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 a {
   text-decoration: none;
 }
@@ -89,7 +105,7 @@ ul{
 }
 /*Header*/
 .main-header{
-  margin-bottom: 70px;
+  margin-bottom: -60px;
 }
 .main-navigation{
   font-size: 16px;
@@ -107,13 +123,13 @@ ul{
   flex-direction: column;
 }
 .header-container{
-  width: 1146px;
-  margin: 0 auto;
-  padding: 0 10px;
-
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.main-header-logo{
+  width: 154px;
+  height: 64px;
 }
 .site-navigation{
   margin: 0;
@@ -373,25 +389,34 @@ ul{
   color:var(--link-hover);
   border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
-/*Container*/
-.container{
-  width: 1146px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
 /*Slider*/
 .slider{
   width: 100%;
   height: auto;
+  margin-bottom: 41px;
 }
-
-.slider button{
+.slider-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.slider-option{
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.slider-radio{
+}
+.slider-option button{
   width: 278px;
   min-height: 63px;
   font-size: 32px;
   line-height: 44px;
   border-radius: 70px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  align-self: center;
 }
 .slider p{
   font-size: 60px;
@@ -403,6 +428,7 @@ ul{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 .shares h2{
   display:block;
@@ -453,7 +479,6 @@ ul{
 .product-item {
   width: 267px;
   min-height: 402px;
-  margin-bottom: 40px;
   margin-right: 26px;
 }
 .product-item:nth-child(4n){
@@ -511,6 +536,7 @@ ul{
 .information{
   background-image: url("../img/pattern.png");
   border-radius: 16px;
+  margin-bottom: 40px;
 }
 .information-list{
   display: flex;
@@ -541,6 +567,7 @@ ul{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 /*News*/
 .news{
@@ -550,6 +577,8 @@ ul{
   width: 560px;
   min-height: 220px;
   color: var(--black);
+  margin-bottom: 40px;
+  margin-right: 26px;
 }
 
 .news a{
@@ -569,6 +598,7 @@ ul{
   color: var(--gray);
   background-image: url("../img/mail_background.png");
   background-repeat: no-repeat;
+  background-size: contain;
   width: 560px;
   min-height: 220px;
 }
@@ -576,12 +606,14 @@ ul{
 .mail-background{
   width: 548px;
   min-height: 210px;
+  margin: 5px 6px;
   background: var(--form-background);
   border-radius: 16px;
 }
 
 .mailing p{
   font-family: "Roboto";
+  margin: 0;
 }
 .mailing input{
   width: 368px;
@@ -816,10 +848,6 @@ ul{
   padding-right: 27px;
 }
 .footer-center{
-  width: 1146px;
-  margin: 0 auto;
-  padding: 0 10px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
