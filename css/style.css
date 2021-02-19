@@ -469,7 +469,7 @@ ul{
   border-radius: 4px;
 }
 
-.product-item h3{
+.product-item h3 {
   display: inline;
   margin-top: 17px;
   font-family: "Roboto Medium";
@@ -486,8 +486,7 @@ ul{
   z-index: 1;
 }
 .product-img-svg svg{
-  margin-left: 14px;
-  margin-top: 17px;
+  margin: 25% 25%;
 
 }
 .product-item img{
