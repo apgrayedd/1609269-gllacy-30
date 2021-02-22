@@ -520,7 +520,7 @@ ul{
   background-repeat: no-repeat;
   border-radius: 16px;
   width: 560px;
-  height: 229px;
+  min-height: 229px;
 
   display: flex;
   flex-direction: column;
@@ -562,7 +562,6 @@ ul{
 .product-item {
   width: 267px;
   min-height: 402px;
-  margin-right: 26px;
   position: relative;
 }
 .product-item:nth-child(4n){
@@ -578,14 +577,22 @@ ul{
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-
-.product-item h3 {
-  display: inline;
+.product-item p{
+  font-size: 45px;
+  line-height: 45px;
+  margin-bottom: 17px;
+}
+.product-item span{
   margin-top: 17px;
   font-family: "Roboto Medium";
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   max-width: 267px;
   margin-top: 267px;
+  text-align: center;
+}
+.product-item span:not(:last-of-type){
+  font-size: 30px;
+  line-height: 35px;
 }
 .product-item .hit{
   position: absolute;
@@ -599,17 +606,6 @@ ul{
   height: 267px;
   width: 267px;
   margin-bottom: -110px;
-}
-
-.product-item p{
-  font-size: 45px;
-  line-height: 45px;
-  margin-bottom: 17px;
-}
-
-.product-item span{
-  font-size: 30px;
-  line-height: 35px;
 }
 /*Information*/
 .information{
@@ -683,7 +679,7 @@ ul{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: stretch;
+  align-items: flex-start;
 }
 /*News*/
 .news{
@@ -721,14 +717,11 @@ ul{
 
 /*Mailing*/
 .mailing{
+  position: relative;
   color: var(--gray);
-  background-image: url("../img/mail_background.png");
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 560px;
   min-height: 220px;
 }
-
 .mail-background{
   max-width: 548px;
   margin: 5px 6px;
@@ -738,6 +731,17 @@ ul{
   padding-left: 20px;
   padding-right: 16px;
   padding-bottom: 24px;
+}
+.mail-background::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 560px;
+  height: 100%;
+  background-image: url("../img/mail_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .mail-form p{
   font-family: "Roboto";
