@@ -44,9 +44,12 @@
   --catalog-focus:#EDEDED;
   --catalog-selected:#D07058;
 }
+.page-body{
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 
-.page{
   min-width: 1146px;
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Roboto Bold";
@@ -54,13 +57,6 @@
   line-height: 22px;
   color: var(--white);
   background-color: var(--first-background);
-  height: 100%;
-}
-.page-body{
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-
-  min-height: 100%;
 }
 .visually-hidden{
   position: absolute;
@@ -74,7 +70,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.center{
+.container{
   width: 1146px;
   margin: 0 auto;
   padding: 0 10px;
@@ -410,9 +406,6 @@ ul{
   display: flex;
   align-items:center;
   width: 100%;
-  justify-content: space-between;
-}
-.slider-radio{
 }
 .slider-option button{
   width: 278px;
@@ -422,6 +415,9 @@ ul{
   border-radius: 70px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   justify-self: center;
+}
+.slider-radio{
+  width: 434px;
 }
 .slider p{
   font-size: 60px;
@@ -438,10 +434,6 @@ ul{
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 40px;
-}
-.shares h2{
-  display:block;
-  width: 100%;
 }
 .shares-item-1{
   background-image: url("../img/crimson_background.jpg");
@@ -499,12 +491,14 @@ ul{
   width: 267px;
   min-height: 402px;
   margin-right: 26px;
+  position: relative;
 }
 .product-item:nth-child(4n){
   margin-right: 0;
 }
 .product-item a{
   color: var(--white);
+  position: absolute;
 }
 
 .product-item:hover{
@@ -518,26 +512,20 @@ ul{
   margin-top: 17px;
   font-family: "Roboto Medium";
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 267px;
+  margin-top: 267px;
 }
-.product-img-svg{
+.product-item .hit{
+  position: absolute;
   height: 61px;
   width: 61px;
-  background-color: #FFFFFF;
-  border-radius: 50%;
-
   margin-bottom: -61px;
-  position: absolute;
-  z-index: 1;
+  order: 1;
 }
-.product-img-svg svg{
-  margin: 25% 25%;
-
-}
-.product-item img{
+.product-item .product{
   border-radius: 50%;
   height: 267px;
   width: 267px;
-
   margin-bottom: -110px;
 }
 
