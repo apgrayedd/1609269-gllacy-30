@@ -629,16 +629,27 @@ ul{
   padding-left: 49px;
   padding-right: 23px;
 }
-.information-item:nth-child(1):before{
+.information-item:before{
   content:"";
   position: absolute;
   width: 49px;
   height: 49px;
-  background-image:url("../img/ice_cream_icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left:-55px;
   top:-7px;
+}
+.information-item:nth-child(1):before{
+  background-image:url("../img/ice_cream_icon.svg");
+}
+.information-item:nth-child(2):before{
+  background-image:url("../img/cow_icon.svg");
+}
+.information-item:nth-child(3):before{
+  background-image:url("../img/leaf_icon.svg");
+}
+.information-item:nth-child(4):before{
+  background-image:url("../img/thermometer_icon.svg");
 }
 .information-item{
   position: relative;
