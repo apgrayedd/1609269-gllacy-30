@@ -47,11 +47,11 @@
 .page-body{
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-
   min-width: 1146px;
   height: 100%;
   margin: 0;
   padding: 0;
+  padding-top: 9px;
   font-family: "Roboto Bold";
   font-size: 16px;
   line-height: 22px;
@@ -100,9 +100,6 @@ ul{
   outline: none;
 }
 /*Header*/
-.main-header{
-  margin-bottom: -60px;
-}
 .main-navigation{
   font-size: 16px;
   line-height: 18px;
@@ -130,6 +127,18 @@ ul{
 .site-navigation{
   margin: 0;
   padding: 0;
+  margin-left: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.site-navigation li{
+  align-self: center;
+}
+.site-navigation li a{
+  margin-right: 32px;
+}
+.site-navigation li:last-child a{
+  margin-right: 0;
 }
 .site-navigation>li>a{
   display: inline-block;
@@ -143,6 +152,7 @@ ul{
 }
 .contact-info{
   order: 1;
+  width: 100%;
   margin-left: auto;
 }
 .header-contact-info{
@@ -162,7 +172,7 @@ ul{
 .catalog{
   width: 87px;
   display: inline-block;
-  margin-right: auto;
+  position: relative;
 }
 .catalog:hover{
   min-height: 31px;
@@ -182,6 +192,7 @@ ul{
   border-radius: 26px;
 }
 .catalog-list{
+  position: absolute;
   width: 143px;
   min-height: 171px;
   font-size: 14px;
@@ -219,10 +230,18 @@ ul{
   color: var(--white);
 }
 /*login*/
-.login-link{
+.login{
+  position: relative;
+}
+.login-icon{
   display: inline-block;
+  position: relative;
 
   width: 92px;
+  height: 32px;
+  margin-top: 14px;
+  margin-right: 10px;
+
   min-height: 32px;
   font-size: 14px;
   line-height: 16px;
@@ -232,11 +251,31 @@ ul{
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
 }
-.login-link:hover{
+.login-icon:hover,
+.login-icon:hover svg{
   background: var(--white);
+  fill: var(--black);
   color: var(--black);
 }
+.login-icon:focus,
+.login-icon:focus svg{
+  background: var(--white);
+  fill: var(--black);
+  color: var(--black);
+}
+.login-icon span{
+  position: absolute;
+  left: 44px;
+  top:8px;
+}
+.login-icon svg{
+  position: absolute;
+  left: 16px;
+  top:6px;
+  fill: white;
+}
 .login-link-form{
+  position: absolute;
   min-height:241px;
   width:277px;
   background: var(--form-background);
@@ -268,10 +307,13 @@ ul{
 }
 /*Basket*/
 .basket-icon{
+  position: relative;
   display: inline-block;
 
   width: 100px;
-  min-height: 32px;
+  height: 32px;
+
+  margin-top: 14px;
   font-family: "Roboto Medium";
   font-size: 14px;
   line-height: 16px;
@@ -279,11 +321,31 @@ ul{
   border-radius: 20px;
   color: var(--white);
 }
-.basket-icon:hover{
+.basket-icon:hover,
+.basket-icon:hover svg{
+  fill: var(--black);
   color: var(--black);
   background-color: var(--white);
 }
+.basket-icon:focus,
+.basket-icon:focus svg{
+  fill: var(--black);
+  color: var(--black);
+  background-color: var(--white);
+}
+.basket-icon svg{
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  fill: #fff;
+}
+.basket-icon span{
+  position: absolute;
+  top: 8px;
+  left: 45px;
+}
 .basket-form{
+  position: absolute;
   width: 539px;
   min-height: 242px;
   background: var(--form-background);
@@ -331,26 +393,36 @@ ul{
 }
 /*Searcher*/
 .search{
+  position: relative;
   margin-left: auto;
+  margin-top: 14px;
+  margin-right: 10px;
 }
-.searcher{
-  display: inline-block;
-  width: 32px;
-  min-height: 32px;
+.search-icon{
+  display: block;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 8px;
 }
-.searcher:hover{
+.search-icon svg{
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}
+.search-icon:hover,
+.search-icon:hover svg{
   background:var(--white);
   fill: var(--black);
 }
-.search-icon{
-  fill: var(--white);
-}
-.search-icon:hover{
+.search-icon:focus,
+.search-icon:focus svg{
+  background:var(--white);
   fill: var(--black);
 }
 .searcher-form{
+  position: absolute;
   min-height: 84px;
   width: 349px;
   background: var(--form-background);
@@ -498,7 +570,7 @@ ul{
 }
 .product-item a{
   color: var(--white);
-  position: absolute;
+  display: block;
 }
 
 .product-item:hover{
@@ -557,7 +629,19 @@ ul{
   padding-left: 49px;
   padding-right: 23px;
 }
+.information-item:nth-child(1):before{
+  content:"";
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  background-image:url("../img/ice_cream_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left:-55px;
+  top:-7px;
+}
 .information-item{
+  position: relative;
   width: 485px;
   margin-bottom: 33px;
 }
