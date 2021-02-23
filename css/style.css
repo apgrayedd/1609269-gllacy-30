@@ -722,43 +722,19 @@ ul{
   width: 560px;
   min-height: 220px;
 }
-.mail-background{
-  max-width: 548px;
-  margin: 5px 6px;
-  background: var(--form-background);
-  border-radius: 16px;
-  padding-top: 29px;
-  padding-left: 20px;
-  padding-right: 16px;
-  padding-bottom: 24px;
-}
-.mail-background::before{
+.mailing::before{
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 560px;
+  width: 100%;
   height: 100%;
   background-image: url("../img/mail_background.png");
   background-repeat: no-repeat;
-  background-size: cover;
+   background-size: cover;
+   border-radius: 16px;
+   order: -1;
 }
-.mail-form p{
-  font-family: "Roboto";
-  margin: 0;
-  margin-bottom: 47px;
-}
-.mail-form form{
-  display: flex;
-}
-.mailing input{
-  width: 368px;
-  min-height: 44px;
-  border: 1px solid rgba(178, 178, 178, 0.52);
-  box-sizing: border-box;
-  border-radius: 6px;
-}
-
 .mailing input:hover{
   border: 2px solid rgba(46, 136, 228, 0.52);
   border-radius: 4px;
@@ -768,7 +744,39 @@ ul{
   border-radius: 70px;
   margin-left: auto;
 }
+.mail-form{
+  position:relative;
+  margin-top: 5px;
+  margin-left: 6px;
+  margin-bottom: 5px;
+  width: 548px;
+  height: 100%;
+  background-color: #F8F7F4;
+  border-radius: 16px;
+  order: 1;
 
+  padding-top:25px;
+  padding-bottom: 35px;
+}
+.mail-form p{
+  font-family: "Roboto";
+  margin: 0;
+  margin-bottom: 43px;
+  margin-left: 20px;
+  width: 512px;
+}
+.mail-form form{
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.mailing input{
+  width: 368px;
+  min-height: 44px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  box-sizing: border-box;
+  border-radius: 6px;
+}
 /*Map*/
 .map{
   width: 1200px;
