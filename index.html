@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body class="page-body">
+  <body class="page-body slider-2">
     <header class="main-header">
       <nav class="main-navigation">
         <div class="main-navigation-wrapper">
@@ -99,7 +99,7 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
-      <section class="slider">
+      <section class="slider visually-hidden">
         <div class="backlight">
           <div class="slider-flex">
             <h2 class="visually-hidden">Слайдер</h2>
@@ -107,11 +107,45 @@
             <p>Пломбир с помадкой и клубничный щербет</p>
             <div class="slider-option">
               <div class="slider-radio">
-                <input type="radio" name="slider" value="1">
-                <input type="radio" name="slider" value="2">
-                <input type="radio" name="slider" value="3" checked>
+                <button type="button" class="slider-button-radio slider-button-1 slider-radio-selected" aria-label="Первый слайд"></button>
+                <button type="button" class="slider-button-radio slider-button-2" aria-label="Второй слайд"></button>
+                <button type="button" class="slider-button-radio slider-button-3" aria-label="Третий слайд"></button>
               </div>
-              <button type="button" class="button">Давайте оба!</button>
+              <button type="button" class="button slider-button">Давайте оба!</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider ">
+        <div class="backlight">
+          <div class="slider-flex">
+            <h2 class="visually-hidden">Слайдер</h2>
+            <img src="img/slider_2.png" alt="Мороженко" height="582" width="639">
+            <p>Шоколадный пломбир и лимонный сорбет</p>
+            <div class="slider-option">
+              <div class="slider-radio">
+                <button type="button" class="slider-button-radio slider-button-1" aria-label="Первый слайд"></button>
+                <button type="button" class="slider-button-radio slider-button-2 slider-radio-selected" aria-label="Второй слайд"></button>
+                <button type="button" class="slider-button-radio slider-button-3" aria-label="Третий слайд"></button>
+              </div>
+              <button type="button" class="button slider-button">Давайте оба!</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider visually-hidden">
+        <div class="backlight">
+          <div class="slider-flex">
+            <h2 class="visually-hidden">Слайдер</h2>
+            <img src="img/slider_3.png" alt="Мороженко" height="582" width="639">
+            <p>Крем-брюле и пломбир с малиновым джемом</p>
+            <div class="slider-option">
+              <div class="slider-radio">
+                <button type="button" class="slider-button-radio slider-button-1" aria-label="Первый слайд"></button>
+                <button type="button" class="slider-button-radio slider-button-2" aria-label="Второй слайд"></button>
+                <button type="button" class="slider-button-radio slider-button-3 slider-radio-selected" aria-label="Третий слайд"></button>
+              </div>
+              <button type="button" class="button slider-button">Давайте оба!</button>
             </div>
           </div>
         </div>
@@ -154,6 +188,7 @@
               <p>310 ₽<span>/кг</span></p>
               <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
             </a>
+            <button class="button" type="submit">Быстрый просмотр</button>
           </li>
           <li class="product-item">
             <a href="#">
@@ -173,6 +208,7 @@
               <p>380 ₽<span>/кг</span></p>
               <span>Сливочно-кофейное с кусочками шоколада</span>
             </a>
+            <button class="button" type="submit">Быстрый просмотр</button>
           </li>
           <li class="product-item">
             <a href="#">
@@ -192,6 +228,7 @@
               <p>355 ₽<span>/кг</span></p>
               <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
             </a>
+            <button class="button" type="submit">Быстрый просмотр</button>
           </li>
           <li class="product-item">
             <a href="#">
@@ -211,6 +248,7 @@
               <p>415 ₽<span>/кг</span></p>
               <span>Сливочное крем-брюле с карамельной подливкой</span>
             </a>
+            <button class="button" type="submit">Быстрый просмотр</button>
           </li>
         </ul>
       </section>
