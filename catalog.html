@@ -107,20 +107,31 @@
     <section class="filters">
         <h2 class="visually-hidden">Фильтр</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="GET" >
-            <fieldset class="filter-option">
+            <fieldset class="filter-option ">
                 <legend>Сортировка:</legend>
-                <select name="sorting" class="sorting">
-                    <option value="popularity">по популярности</option>
-                    <option value="ascending">сначала недорогие</option>
-                    <option value="descending">сначала дорогие</option>
-                    <option value="fat">по жирности</option>
-                </select>
-            </fieldset>
-            <fieldset class="filter-option filter-rage">
-                <legend>Цена: 100 ₽ - 500 ₽</legend>
-                <div class="range-wrapper">
-                  <input class="visually-hidden" type="range" id="price" name="price" min="0" max="1000" value="100" step="25">
+                <div class="sorting-menu">
+                  <select name="sorting" class="sorting">
+                      <option value="popularity">по популярности</option>
+                      <option value="ascending">сначала недорогие</option>
+                      <option value="descending">сначала дорогие</option>
+                      <option value="fat">по жирности</option>
+                  </select>
+                  <svg class="sorting-arrow-icon" width="11" height="10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 10L0 0h11"/>
+                  </svg>
                 </div>
+            </fieldset>
+            <fieldset class="filter-option filter-item">
+              <legend>Цена: 100 ₽ – 500 ₽</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="width: 30%; margin-left: 20%"></div>
+                  </div>
+                  <div class="toggle toggle-min" style="left: 20%" tabindex="0"></div>
+                  <div class="toggle toggle-max" style="left: 50%" tabindex="0"></div>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filter-option filter-radio">
                 <legend>Жирность</legend>

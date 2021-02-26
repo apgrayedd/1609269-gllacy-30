@@ -568,7 +568,6 @@
 }
 /*Slider*/
 .slider{
-  width: 100%;
   height: auto;
   margin-bottom: 41px;
 }
@@ -1081,6 +1080,7 @@
   border: none;
   background-image: url("../img/close_big_icon.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 /*Filter-Option*/
 .filters{
@@ -1098,6 +1098,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 14px;
+  position: relative;
 }
 .filter-option legend{
   font-size: 14px;
@@ -1110,7 +1111,7 @@
   font-size: 14px;
   line-height: 16px;
   font-family: "Roboto Medium";
-
+  position: relative;
   width: 196px;
   height: 36px;
   background: rgba(255, 255, 255, 0.2);
@@ -1118,24 +1119,76 @@
   color:var(--white);
   outline: none;
   border: none;
+  appearance: none;
+  padding-left: 16px;
 }
-.sorting:hover{
+.sorting-arrow-icon{
+  width: 11px;
+  height: 10px;
+  fill: #ECF1EE;
+  position: absolute;
+  right: 14px;
+  top: 14.5px;
+  z-index: -1;
+}
+.sorting-menu:hover .sorting,
+.sorting-menu:hover .sorting-arrow-icon{
   color: var(--black);
+  fill: var(--black);
 }
 /*Range*/
-.range-wrapper{
+.filter-item{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.range-filter{
   width: 218px;
-  height: 36px;
+  min-height: 36px;
+}
+.filter-item legend {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Roboto Medium";
+}
+.range-controls {
+  position: relative;
+  height: 18px;
+  padding-top: 18px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
+  padding-right: 21px;
+  padding-left: 21px;
 }
-.range-wrapper input{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-  width: 176px;
+.range-controls .scale {
+  height: 2px;
+  background: rgba(248, 247, 244, 0.5);
 }
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #F8F7F4;
+}
+.range-controls .toggle {
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color:  #ABABAB;
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  cursor: pointer;
+}
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 136px;
+}
+
 /*Filter-radio*/
 .filter-radio{
   display: block;
@@ -1157,6 +1210,10 @@
   display: block;
   cursor: pointer;
   user-select: none;
+  opacity: 0.8;
+}
+.filter-radio-back label:hover{
+  opacity: 1;
 }
 .filter-radio-back li{
   padding-left: 28px;
@@ -1165,21 +1222,24 @@
   content: "";
   position: absolute;
   left: -28px;
-  top: -0.4px;
+  top: 0px;
   width: 15px;
   height: 15px;
   border: 4px solid white;
   border-radius: 50%;
+  opacity: 0.8;
 }
 .filter-input-radio:checked + label::after{
   content: "";
   position: absolute;
-  left: -20.4px;
-  top: 7.3px;
+  left: -21px;
+  top: 7px;
   width: 8px;
   height: 8px;
   background-color: white;
   border-radius: 50%;
+  box-sizing: border-box;
+  opacity: 0.8;
 }
 /*Filter-checkbox*/
 .filter-check-box{
@@ -1195,6 +1255,10 @@
   display: block;
   cursor: pointer;
   user-select: none;
+  opacity: 0.8;
+}
+.filter-check-box-back label:hover{
+  opacity: 1;
 }
 .filter-input-checkbox + label::before{
   content: "";
