@@ -377,45 +377,50 @@
 }
 .basket-icon{
   position: relative;
-  display: inline-block;
-
-  width: 100px;
+  display: inline-flex;
+  min-width: 100px;
   height: 32px;
-
+  white-space: nowrap;
   margin-top: 14px;
   font-family: "Roboto Medium";
   font-size: 14px;
   line-height: 16px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
   color: var(--white);
 }
-.basket-icon:hover,
-.basket-icon:hover svg{
-  fill: var(--black);
-  color: var(--black);
-  background-color: var(--white);
-}
-.basket-icon:focus,
-.basket-icon:focus svg{
-  fill: var(--black);
-  color: var(--black);
-  background-color: var(--white);
+.basket-icon>span{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  position: absolute;
+  top: 8px;
+  left: 45px;
+  padding: 10px 16px 9px 44px;
+  margin-left: -45px;
+  margin-top: -10px;
 }
 .basket-icon svg{
   position: absolute;
   top: 6px;
   left: 16px;
   fill: #fff;
+  z-index: 1;
 }
-.basket-icon span{
-  position: absolute;
-  top: 8px;
-  left: 45px;
+.basket-icon>span:hover,
+.basket-icon:hover svg{
+  color: var(--black);
+  background-color: var(--white);
+  fill: var(--black);
 }
+.basket-icon>span:focus{
+  color: var(--black);
+  background-color: var(--white);
+}
+.basket-icon:focus svg{
+  fill: var(--black);
+}
+
 .basket-form{
   position: absolute;
-  right: 0px;
+  right: 67px;
   width: 510px;
   min-height: 201px;
   background: var(--form-background);
@@ -424,53 +429,70 @@
   color: var(--black);
   margin-top: 4px;
   z-index: 1;
-
-  padding: 20px 14px 21px 15px;
+  padding: 20px 14px 12px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .basket-form table{
   border-bottom: 1px solid #CACAC7;
   font-size: 13px;
   line-height: 16px;
   font-family: "Roboto";
-  width: 468px;
-}
-.basket-form tr{
-  width: 468px;
-}
-.basket-form>button{
-  width: 172px;
-  min-height: 44px;
-  box-shadow: 0px 1px 2px rgba(172, 16, 0, 0.25);
-  border-radius: 26px;
-  font-size: 18px;
-  line-height: 16px;
-}
-.basket-form a{
-  color: var(--black);
-}
-.basket-form td span{
-  color:#ababab;
-}
-.basket-form td:nth-child(3){
-  max-width: 216px;
-  margin-right: 31px;
-}
-.basket-form td:nth-child(4){
-  color: #000000;
-}
-.basket-form p{
-  font-size: 15px;
-  line-height: 16px;
-  font-family: "Roboto Bold";
+  width: 484px;
+  padding-bottom: 18px;
 }
 .basket_remove_item{
+  height: 11px;
   width: 11px;
   padding: 0;
 }
 .basket_remove_icon{
   height: 11px;
   width: 11px;
+  padding: 0;
+  display: block;
+  margin: auto;
+  background: none;
+  background-image: url("../img/basket_delete_item.svg");
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
 }
+.basket_image_item{
+  height: 33px;
+  width: 33px;
+}
+.basket_name_item{
+  max-width: 181px;
+}
+.basket_price_item{
+  color: #000000;
+}
+.basket_price_item span{
+  color:#ababab;
+}
+.basket_total_sum{
+  margin-left: auto;
+}
+.basket_button{
+  width: 172px;
+  min-height: 44px;
+  box-shadow: 0px 1px 2px rgba(172, 16, 0, 0.25);
+  border-radius: 26px;
+  font-size: 18px;
+  line-height: 16px;
+  margin-left: auto;
+}
+.basket-form a{
+  color: var(--black);
+}
+.basket-form p{
+  font-size: 15px;
+  line-height: 16px;
+  font-family: "Roboto Bold";
+}
+
 .basket-form img{
   border-radius: 50%;
   margin-left: 9px;
