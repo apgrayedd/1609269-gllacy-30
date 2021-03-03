@@ -377,8 +377,8 @@
 }
 .basket-icon{
   position: relative;
-  display: inline-flex;
-  min-width: 100px;
+  display: block;
+  width: 100px;
   height: 32px;
   white-space: nowrap;
   margin-top: 14px;
@@ -386,10 +386,16 @@
   font-size: 14px;
   line-height: 16px;
   color: var(--white);
-}
-.basket-icon>span{
+
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
+  padding-right: 16px;
+  border-radius: 20px;
+}
+.basket-products-svg{
+  fill: none;
+}
+.basket-icon>span{
   position: absolute;
   top: 8px;
   left: 45px;
@@ -404,13 +410,16 @@
   fill: #fff;
   z-index: 1;
 }
-.basket-icon>span:hover,
+.basket-icon:hover,
 .basket-icon:hover svg{
   color: var(--black);
   background-color: var(--white);
   fill: var(--black);
 }
-.basket-icon>span:focus{
+.basket-icon:not(.basket-empty):hover .basket-products-svg{
+  fill: #E84D37;
+}
+.basket-icon:focus{
   color: var(--black);
   background-color: var(--white);
 }
@@ -442,6 +451,9 @@
   width: 484px;
   padding-bottom: 18px;
 }
+.basket-no-empty svg{
+
+}
 .basket_remove_item{
   height: 11px;
   width: 11px;
@@ -458,6 +470,7 @@
   background-repeat: no-repeat;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 .basket_image_item{
   height: 33px;
