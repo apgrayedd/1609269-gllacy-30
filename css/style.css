@@ -429,7 +429,7 @@
 
 .basket-form{
   position: absolute;
-  right: 67px;
+  right: 0px;
   width: 510px;
   min-height: 201px;
   background: var(--form-background);
