@@ -270,22 +270,22 @@
   position: relative;
 }
 .login-icon{
-  display: inline-block;
-  position: relative;
-
-  width: 92px;
+  min-width: 92px;
   height: 32px;
   margin-top: 14px;
   margin-right: 10px;
-
   min-height: 32px;
   font-size: 14px;
   line-height: 16px;
   font-family: "Roboto Medium";
   color: var(--white);
-
+  text-decoration: none;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .login-icon:hover,
 .login-icon:hover svg{
@@ -300,14 +300,13 @@
   color: var(--black);
 }
 .login-icon span{
-  position: absolute;
-  left: 44px;
-  top:8px;
+  display: block;
+  margin-right: 16px;
 }
 .login-icon svg{
-  position: absolute;
-  left: 16px;
-  top:6px;
+  display: block;
+  margin-right: 8px;
+  margin-left: 16px;
   fill: white;
 }
 .login-link-form{
@@ -322,9 +321,9 @@
   padding-left: 19px;
   padding-right: 17px;
   padding-bottom: 22px;
-  margin-top: 1px;
+  margin-top: 4px;
 
-  left: -184px;
+  right: 10px;
 }
 .login-link-form form{
   display: flex;
@@ -377,8 +376,7 @@
 }
 .basket-icon{
   position: relative;
-  display: block;
-  width: 100px;
+  min-width: 100px;
   height: 32px;
   white-space: nowrap;
   margin-top: 14px;
@@ -386,34 +384,32 @@
   font-size: 14px;
   line-height: 16px;
   color: var(--white);
-
+  text-decoration: none;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  padding-right: 16px;
-  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .basket-products-svg{
   fill: none;
 }
-.basket-icon>span{
-  position: absolute;
-  top: 8px;
-  left: 45px;
-  padding: 10px 16px 9px 44px;
-  margin-left: -45px;
-  margin-top: -10px;
+.basket-icon span{
+  display: block;
+  margin-right: 16px;
 }
 .basket-icon svg{
-  position: absolute;
-  top: 6px;
-  left: 16px;
+  display: block;
+  margin-right: 7px;
+  margin-left: 16px;
   fill: #fff;
-  z-index: 1;
 }
-.basket-icon:hover,
-.basket-icon:hover svg{
+.basket-icon:hover{
   color: var(--black);
   background-color: var(--white);
+}
+.basket-icon:hover svg{
   fill: var(--black);
 }
 .basket-icon:not(.basket-empty):hover .basket-products-svg{
@@ -426,7 +422,9 @@
 .basket-icon:focus svg{
   fill: var(--black);
 }
-
+.basket-icon:not(.basket-empty):focus .basket-products-svg{
+  fill: #E84D37;
+}
 .basket-form{
   position: absolute;
   right: 0px;
@@ -450,9 +448,6 @@
   font-family: "Roboto";
   width: 484px;
   padding-bottom: 18px;
-}
-.basket-no-empty svg{
-
 }
 .basket_remove_item{
   height: 11px;
@@ -478,6 +473,10 @@
 }
 .basket_name_item{
   max-width: 181px;
+  text-decoration: none;
+}
+.basket_name_item a{
+  text-decoration: none;
 }
 .basket_price_item{
   color: #000000;
