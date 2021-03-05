@@ -300,11 +300,9 @@
   color: var(--black);
 }
 .login-icon span{
-  display: block;
   margin-right: 16px;
 }
 .login-icon svg{
-  display: block;
   margin-right: 8px;
   margin-left: 16px;
   fill: white;
@@ -396,11 +394,9 @@
   fill: none;
 }
 .basket-icon span{
-  display: block;
   margin-right: 16px;
 }
 .basket-icon svg{
-  display: block;
   margin-right: 7px;
   margin-left: 16px;
   fill: #fff;
@@ -742,7 +738,7 @@
 }
 .product-item {
   width: 267px;
-  min-height: 375px;
+  min-height: 385px;
   position: relative;
   padding-left: 9.5px;
   padding-right: 9.5px;
@@ -768,17 +764,20 @@
   width: 267px;
   font-size: 45px;
   line-height: 45px;
-  margin-bottom: 17px;
+  margin: 0;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
-.product-item span{
+.product-item .product-name{
+  margin-top: 33px;
+  display: inline-block;
   font-family: "Roboto Medium";
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  max-width: 267px;
+  text-decoration: underline;
+  text-decoration-color:rgba(255, 255, 255, 0.2);
   text-align: center;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+  width: 267px;
 }
-.product-item span:not(:last-of-type){
+.product-item span:not(.product-name){
   font-size: 30px;
   line-height: 35px;
 }
@@ -793,7 +792,7 @@
   border-radius: 50%;
   height: 267px;
   width: 267px;
-  margin-bottom: -110px;
+  margin-bottom: -65.7px;
 }
 .product-item button{
   position: absolute;
