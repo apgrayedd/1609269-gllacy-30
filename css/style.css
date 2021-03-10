@@ -123,9 +123,10 @@
   height: 64px;
 }
 .site-navigation{
-  margin: 0;
+  display: flex;
+  justify-content: space-around;
   padding: 0;
-  margin-left: 24px;
+  max-width: 700px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -133,9 +134,18 @@
 .site-navigation li{
   align-self: center;
 }
-.site-navigation-item:not(.catalog){
+.site-navigation li:not(.catalog){
   margin-right: 32px;
+  margin-bottom: 15px;
+}
+.site-navigation li:not(.catalog):nth-child(1){
+  margin-right: 0;
+}
+.site-navigation-item{
   text-decoration: none;
+}
+.site-navigation-item:nth-child(n+2){
+  margin-right: 0;
 }
 .site-navigation-item{
   margin-right: 0;
