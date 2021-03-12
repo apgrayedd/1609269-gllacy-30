@@ -157,7 +157,7 @@
   display: inline-block;
   color: var(--white);
   text-decoration: none;
-  border-bottom: 1px solid var(--text-decoration-color);
+  border-bottom: 1px solid var(--text-decoration-grey);
 }
 
 .site-navigation-item:nth-last-child(1):hover{
