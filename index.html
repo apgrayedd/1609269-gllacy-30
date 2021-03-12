@@ -21,7 +21,7 @@
             </a>
             <ul class="site-navigation">
               <li><a href="catalog.html" class="site-navigation-item catalog">Каталог</a>
-                  <ul class="catalog-list">
+                  <ul class="catalog-list visually-hidden">
                     <li class="catalog-item">
                       <a href="catalog.html">Новинки</a>
                     </li>
@@ -41,16 +41,6 @@
               </li>
               <li><a class="site-navigation-item" href="#">Доставка и оплата</a></li>
               <li><a class="site-navigation-item" href="#">О компании</a></li>
-              <li><a class="site-navigation-item" href="#">Доставка и оплата</a></li>
-              <li><a class="site-navigation-item" href="#">О компании</a></li>
-              <li><a class="site-navigation-item" href="#">Доставка и оплата</a></li>
-              <li><a class="site-navigation-item" href="#">О компании</a></li>
-              <li><a class="site-navigation-item" href="#">Доставка и оплата</a></li>
-              <li><a class="site-navigation-item" href="#">О компании</a></li>
-              <li><a class="site-navigation-item" href="#">Доставка и оплата</a></li>
-              <li><a class="site-navigation-item" href="#">О компании</a></li>
-              <li><a class="site-navigation-item" href="#">Доставка и оплата</a></li>
-              <li><a class="site-navigation-item" href="#">О компании</a></li>
             </ul>
             <div class="search">
               <a href="#" class="search-icon">
@@ -61,7 +51,7 @@
                   4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z"/>
                 </svg>
               </a>
-              <div class="searcher-form">
+              <div class="searcher-form visually-hidden">
                 <form action="https://echo.htmlacademy.ru" method="GET">
                   <input type="text" name="searcher" placeholder="Крем-брюле">
                 </form>
@@ -78,7 +68,7 @@
                 </svg>
                 <span>Вход</span>
               </a>
-              <div class="login-link-form">
+              <div class="login-link-form visually-hidden">
                 <form action="https://echo.htmlacademy.ru" method="POST">
                   <input type="email" name="email" placeholder="email@example.com">
                   <input type="password" name="password" placeholder="••••••">
@@ -309,13 +299,22 @@
       </div>
       <div class="map">
         <section class="info-and-map">
-          <h2 class="visually-hidden">Как нас найти</h2>
-          <p>Адрес главного офиса и офлайн-магазина:</p>
-          <p>ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
-          <p>Для заказов по телефону:</p>
-          <p><a href="tel:88124502525" class="contacts-phone">8 812 450-25-25</a></p>
-          <p>(с 10 до 20 ежедневно)</p>
-          <button type="button" class="button">Форма обратной связи</button>
+          <iframe class="iframe_map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533207!2d30.
+            320858716352063!3d59.938716481876256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46
+            96310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu
+            y4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1
+            sru!2s!4v1615443431737!5m2!1sru!2s" width="100%" height="100%" allowfullscreen="" loading="lazy">
+          </iframe>
+          <div class="map_info">
+            <h2 class="visually-hidden">Как нас найти</h2>
+            <p>Адрес главного офиса и офлайн-магазина:</p>
+            <p>ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
+            <p>Для заказов по телефону:</p>
+            <p><a href="tel:88124502525" class="contacts-phone">8 812 450-25-25</a></p>
+            <p>(с 10 до 20 ежедневно)</p>
+            <button type="button" class="button">Форма обратной связи</button>
+          </div>
         </section>
       </div>
     </main>
