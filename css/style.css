@@ -377,6 +377,7 @@
 .login-link-form input:hover{
   border: 2px solid rgba(178, 178, 178, 0.52);
   height: 12px;
+  padding-left: 14px;
 }
 .login-link-form input:focus{
   border: 2px solid rgba(46, 136, 228, 0.52);
@@ -460,7 +461,7 @@
   border-bottom: 1px solid #CACAC7;
   font-size: 13px;
   line-height: 16px;
-  font-family: "Roboto";
+  font-family: "Roboto Medium";
   width: 484px;
   padding-bottom: 18px;
 }
