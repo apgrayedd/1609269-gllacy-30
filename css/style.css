@@ -129,7 +129,7 @@
 .site-navigation{
   display: flex;
   padding: 0;
-  max-width: 725px;
+  max-width: 592px;
   flex-wrap: wrap;
   list-style: none;
 }
@@ -154,6 +154,13 @@
 .site-navigation-item:nth-last-child(1):hover{
   color: var(--link-hover);
   text-decoration: underline rgba(232, 77, 55, 0.3);
+}
+.user-navigation{
+  margin-left: auto;
+  display: flex;
+  max-width: 400px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 .contact-info{
   order: 1;
@@ -623,7 +630,7 @@
 /*Slider*/
 .slider{
   height: auto;
-  margin-bottom: 41px;
+  margin-bottom: 33px;
 }
 .slider-flex{
   display: flex;
@@ -653,10 +660,11 @@
 }
 .slider-radio{
   position: absolute;
-  width: 58px;
+  max-width: 240px;
   left: 0;
+
   display: flex;
-  width: 67px;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .slider-button-radio{
@@ -664,6 +672,8 @@
   width: 17px;
   height: 17px;
   background-color: transparent;
+  margin-right: 8px;
+  margin-bottom: 8px;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
@@ -797,6 +807,8 @@
   height: 267px;
   width: 267px;
   margin-bottom: -65.7px;
+  background-color: #F8F7F4;
+  object-fit: contain;
 }
 .product-item button{
   position: absolute;
