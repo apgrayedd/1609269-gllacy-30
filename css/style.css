@@ -866,15 +866,8 @@
   object-fit: contain;
 }
 .product-item button{
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-.product-item:hover button{
+  display: none;
   position: static;
-  display: block;
   margin-bottom: 0;
   margin-top: 11px;
   margin-left: auto;
@@ -883,6 +876,9 @@
   height: 44px;
   box-shadow: 0px 1px 2px #AC1000;
   border-radius: 50px;
+}
+.product-item:hover button{
+  display: block;
 }
 .product-item button:hover{
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
