@@ -1318,6 +1318,11 @@
   color: var(--black);
   fill: var(--black);
 }
+.sorting-menu:focus .sorting,
+.sorting-menu:focus .sorting-arrow-icon{
+  color: var(--black);
+  fill: var(--black);
+}
 /*Range*/
 .filter-item{
   padding: 0;

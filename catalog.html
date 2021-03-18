@@ -43,8 +43,8 @@
               <li><a class="site-navigation-item" href="#">О компании</a></li>
             </ul>
             <div class="search">
-              <a href="#" class="search-icon">
-                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a href="#" class="search-icon" aria-label="Поиск">
+                <svg role="img" aria-hidden="true" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141
                   6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0
                   01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936
@@ -53,13 +53,13 @@
               </a>
               <div class="searcher-form">
                 <form action="https://echo.htmlacademy.ru" method="GET">
-                  <input type="text" name="searcher" placeholder="Крем-брюле">
+                  <input type="text" name="searcher" placeholder="Крем-брюле" aria-label="Поле для поиска">
                 </form>
               </div>
             </div>
-            <div class="login">
-              <a href="#" class="login-icon">
-                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="#" class="login-icon" aria-label="Вход">
+              <svg role="img" aria-hidden="true" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg role="img" aria-hidden="true" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z"/>
                   <path d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579 0.585786C3.21071 0.960859 3 1.46957 3 2V4H5V2H18V17H5V15H3V17C3
                   17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893
@@ -70,9 +70,9 @@
               </a>
               <div class="login-link-form">
                 <form action="https://echo.htmlacademy.ru" method="POST">
-                  <input type="email" name="email" placeholder="email@example.com">
-                  <input type="password" name="password" placeholder="••••••">
-                  <button type="submit" class="button">Войти</button>
+                  <input type="email" name="email" placeholder="email@example.com" aria-label="Поле для ввода email">
+                  <input type="password" name="password" placeholder="••••••" aria-label="Поле для ввода пароля">
+                  <button type="submit" class="button" aria-label="Войти в свой профиль">Войти</button>
                   <div>
                     <p><a href="#">Забыли пароль?</a></p>
                     <p><a href="#">Новая регистрация</a></p>
@@ -82,13 +82,13 @@
             </div>
             <div class="basket">
               <a href="#" class="basket-icon basket-no-empty">
-                <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg role="img" aria-hidden="true" width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class ="basket-svg" d="M7.03 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM16.1
                   20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM5.7 2l-.24-2H0v2h3.67l1.5
                   13H19.3L21 2H5.7zm11.8 11H6.97l-1-9h12.72l-1.19 9z"/>
                   <path class="basket-products-svg" d="M5.94 4.03L6.97 13H17.5l1.2-8.97H5.93z"/>
                 </svg>
-                <span>2 товара</span>
+                <span aria-label="В корзине 2 товара">2 товара</span>
               </a>
               <div class="basket-form">
                 <table>
@@ -215,7 +215,7 @@
                   </li>
                 </ul>
             </fieldset>
-            <button type="submit" class="filter-button">Применить</button>
+            <button type="submit" class="filter-button" aria-label="Применить филтры">Применить</button>
         </form>
     </section>
     <section class="product">
@@ -223,117 +223,105 @@
         <ul class="product-list">
             <li class="product-item">
                 <a href="#">
-                  <h3 class="visually-hidden">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-                  <img class ="product" src="img/ice_cream_1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" height="267" width="267">
+                  <img class ="product" src="img/ice_cream_1.jpg" alt="" height="267" width="267">
                   <p>355 ₽<span>/кг</span></p>
                   <h3><span class="product-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></h3>
                 </a>
-                <button class="button" type="submit">Быстрый просмотр</button>
+                <button class="button" type="button" aria-label="Добавить «Сливочное с апельсиновым джемом и цитрусовой стружкой» в корзину">Быстрый просмотр</button>
             </li>
             <li class="product-item">
                 <a href="#">
-                  <h3 class="visually-hidden">Сливочно-кофейное с кусочками шоколада</h3>
-                  <img class ="product" src="img/ice_cream_2.jpg" alt="Сливочно-кофейное с кусочками шоколада" height="267" width="267">
+                  <img class ="product" src="img/ice_cream_2.jpg" alt="" height="267" width="267">
                   <p>380 ₽<span>/кг</span></p>
                   <h3><span class="product-name">Сливочно-кофейное с кусочками шоколада</span></h3>
                 </a>
-                <button class="button" type="submit">Быстрый просмотр</button>
+                <button class="button" type="button" aria-label="Добавить «Сливочно-кофейное с кусочками шоколада» в корзину">Быстрый просмотр</button>
             </li>
             <li class="product-item">
                 <a href="#">
-                  <h3 class="visually-hidden">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-                  <img class ="product" src="img/ice_cream_3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" height="267" width="267">
+                  <img class ="product" src="img/ice_cream_3.jpg" alt="" height="267" width="267">
                   <p>355 ₽<span>/кг</span></p>
                   <h3><span class="product-name">Сливочно-клубничное с присыпкой из белого шоколада</span></h3>
                 </a>
-                <button class="button" type="submit">Быстрый просмотр</button>
+                <button class="button" type="button" aria-label="Добавить «Сливочно-клубничное с присыпкой из белого шоколада» в корзину">Быстрый просмотр</button>
             </li>
             <li class="product-item">
                 <a href="#">
-                  <h3 class="visually-hidden">Сливочное крем-брюле с карамельной подливкой</h3>
-                  <img class ="product" src="img/ice_cream_4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" height="267" width="267">
+                  <img class ="product" src="img/ice_cream_4.jpg" alt="" height="267" width="267">
                   <p>415 ₽<span>/кг</span></p>
                   <h3><span class="product-name">Сливочное крем-брюле с карамельной подливкой</span></h3>
                 </a>
-                <button class="button" type="submit">Быстрый просмотр</button>
+                <button class="button" type="button" aria-label="Добавить «Сливочное крем-брюле с карамельной подливкой» в корзину">Быстрый просмотр</button>
             </li>
             <li class="product-item">
                 <a href="#">
-                  <h3 class="visually-hidden">Сливочное с брусничным джемом</h3>
-                  <img class ="product" src="img/ice_cream_5.jpg" alt="Сливочное с брусничным джемом" height="267" width="267">
+                  <img class ="product" src="img/ice_cream_5.jpg" alt="" height="267" width="267">
                   <p>325 ₽<span>/кг</span></p>
                   <h3><span class="product-name">Сливочное с брусничным джемом</span></h3>
                 </a>
-                <button class="button" type="submit">Быстрый просмотр</button>
+                <button class="button" type="button" aria-label="Добавить «Сливочное с брусничным джемом» в корзину">Быстрый просмотр</button>
             </li>
             <li class="product-item">
                 <a href="#">
-                  <h3 class="visually-hidden">Сливочно-черничное с цельными ягодами черники</h3>
-                  <img class ="product" src="img/ice_cream_6.jpg" alt="Сливочно-черничное с цельными ягодами черники" height="267" width="267">
+                  <img class ="product" src="img/ice_cream_6.jpg" alt="" height="267" width="267">
                   <p>410 ₽<span>/кг</span></p>
                   <h3><span class="product-name">Сливочно-черничное с цельными ягодами черники</span></h3>
                 </a>
-                <button class="button" type="submit">Быстрый просмотр</button>
+                <button class="button" type="button" aria-label="Добавить «Сливочно-черничное с цельными ягодами черники» в корзину">Быстрый просмотр</button>
             </li>
             <li class="product-item">
                 <a href="#">
-                  <h3 class="visually-hidden">Сливочно-лимонное с карамельной присыпкой</h3>
-                  <img class ="product" src="img/ice_cream_7.jpg" alt="Сливочно-лимонное с карамельной присыпкой" height="267" width="267">
+                  <img class ="product" src="img/ice_cream_7.jpg" alt="" height="267" width="267">
                   <p>315 ₽<span>/кг</span></p>
                   <h3><span class="product-name">Сливочно-лимонное с карамельной присыпкой</span></h3>
                 </a>
-                <button class="button" type="submit">Быстрый просмотр</button>
+                <button class="button" type="button" aria-label="Добавить «Сливочно-лимонное с карамельной присыпкой» в корзину">Быстрый просмотр</button>
             </li>
             <li class="product-item">
                 <a href="#">
-                  <h3 class="visually-hidden">Сливочное с шоколадной стружкой</h3>
-                  <img class ="product" src="img/ice_cream_8.jpg" alt="Сливочное с шоколадной стружкой" height="267" width="267">
+                  <img class ="product" src="img/ice_cream_8.jpg" alt="" height="267" width="267">
                   <p>320 ₽<span>/кг</span></p>
                   <h3><span class="product-name">Сливочное с шоколадной стружкой</span></h3>
                 </a>
-                <button class="button" type="submit">Быстрый просмотр</button>
+                <button class="button" type="button" aria-label="Добавить «Сливочное с шоколадной стружкой» в корзину">Быстрый просмотр</button>
             </li>
             <li class="product-item">
                 <a href="#">
-                  <h3 class="visually-hidden">Сливочно-ванильное с кусочками шоколада</h3>
-                  <img class ="product" src="img/ice_cream_9.jpg" alt="Сливочно-ванильное с кусочками шоколада" height="267" width="267">
+                  <img class ="product" src="img/ice_cream_9.jpg" alt="" height="267" width="267">
                   <p>440 ₽<span>/кг</span></p>
                   <h3><span class="product-name">Сливочно-ванильное с кусочками шоколада</span></h3>
                 </a>
-                <button class="button" type="submit">Быстрый просмотр</button>
+                <button class="button" type="button" aria-label="Добавить «Сливочно-ванильное с кусочками шоколада» в корзину">Быстрый просмотр</button>
             </li>
             <li class="product-item">
                 <a href="#">
-                  <h3 class="visually-hidden">Сливочноe с ментоловым сиропом<</h3>
-                  <img class ="product" src="img/ice_cream_10.jpg" alt="Сливочноe с ментоловым сиропом" height="267" width="267">
+                  <img class ="product" src="img/ice_cream_10.jpg" alt="" height="267" width="267">
                   <p>435 ₽<span>/кг</span></p>
                   <h3><span class="product-name">Сливочноe с ментоловым сиропом</span></h3>
                 </a>
-                <button class="button" type="submit">Быстрый просмотр</button>
+                <button class="button" type="button" aria-label="Добавить «Сливочноe с ментоловым сиропом» в корзину">Быстрый просмотр</button>
             </li>
             <li class="product-item">
                 <a href="#">
-                  <h3 class="visually-hidden">Сливочное с кусочками черного шоколада</h3>
-                  <img class ="product" src="img/ice_cream_11.jpg" alt="Сливочное с кусочками черного шоколада" height="267" width="267">
+                  <img class ="product" src="img/ice_cream_11.jpg" alt="" height="267" width="267">
                   <p>355 ₽<span>/кг</span></p>
                   <h3><span class="product-name">Сливочное с кусочками черного шоколада</span></h3>
                 </a>
-                <button class="button" type="submit">Быстрый просмотр</button>
+                <button class="button" type="button" aria-label="Добавить «Сливочное с кусочками черного шоколада» в корзину">Быстрый просмотр</button>
             </li>
             <li class="product-item">
                 <a href="#">
-                  <h3 class="visually-hidden">Сливочное с мятным сиропом</h3>
-                  <img class ="product" src="img/ice_cream_12.jpg" alt="Сливочное с мятным сиропом" height="267" width="267">
+                  <img class ="product" src="img/ice_cream_12.jpg" alt="" height="267" width="267">
                   <p>420 ₽<span>/кг</span></p>
                   <h3><span class="product-name">Сливочное с мятным сиропом</span></h3>
                 </a>
-                <button class="button" type="submit">Быстрый просмотр</button>
+                <button class="button" type="button" aria-label="Добавить «Сливочное с мятным сиропом» в корзину">Быстрый просмотр</button>
             </li>
         </ul>
-        <ul class="pagination-list">
+        <ul class="pagination-list" aria-label="Управление страницей каталога товаров">
             <li class="pagination-back">
-              <a>
-                <svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a aria-label="Назад">
+                <svg role="img" focusable="false" width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.84 5.66L.94.15A.57.57 0 00.53 0a.57.57 0 00-.38.15.47.47 0 000
                   .71L5.69 6 .16 11.17a.5.5 0 00-.16.35c0 .07.01.14.04.2a.5.5 0
                   00.12.16c.1.08.24.13.39.12a.54.54 0 00.37-.15l5.92-5.48a.47.47 0 000-.71z"/>
@@ -341,13 +329,13 @@
               </a>
             </li>
             <li class="selected-pagination"><a>1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
+            <li><a href="#" aria-label="2 страница каталога">2</a></li>
+            <li><a href="#" aria-label="3 страница каталога">3</a></li>
+            <li><a href="#" aria-label="4 страница каталога">4</a></li>
+            <li><a href="#" aria-label="5 страница каталога">5</a></li>
             <li class="pagination-next">
-              <a href="#">
-                <svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a href="#" aria-label="Вперед">
+                <svg role="img" focusable="false" width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.84 5.66L.94.15A.57.57 0 00.53 0a.57.57 0 00-.38.15.47.47 0 000
                   .71L5.69 6 .16 11.17a.5.5 0 00-.16.35c0 .07.01.14.04.2a.5.5 0
                   00.12.16c.1.08.24.13.39.12a.54.54 0 00.37-.15l5.92-5.48a.47.47 0 000-.71z"/>
@@ -364,7 +352,8 @@
           <ul>
             <li>
               <a href="#">
-                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span class="visually-hidden">Facebook</span>
+                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 0a16 16 0 100 32 16 16 0 000-32zm4.06 9.45H17v3.45h3v3.44h-3V25h-3v-8.66h-3V12.9h3V9.45A3.25
                   3.25 0 0117 6h3v3.45h.06z"/>
                 </svg>
@@ -372,7 +361,8 @@
             </li>
             <li>
               <a href="#">
-                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16.64 14.49c.33 0 .65-.06.95-.18.27-.1.5-.3.64-.56a2 2 0 00.15-.8c0-.24-.07-.48-.18-.7a1.05
                   1.05 0 00-.61-.51 3 3 0 00-1-.17h-2v3h.57c.59-.05 1.08-.06 1.48-.08zM18.12 17.08c-.37-.07-.74-.1-1.12-.08h-2.39v3.5h2.45c.42
                   0 .83-.09 1.21-.25.32-.11.6-.33.77-.62.15-.28.22-.59.22-.9.02-.35-.08-.7-.26-1a1.6 1.6 0 00-.88-.65z"/>
@@ -385,7 +375,8 @@
             </li>
             <li>
               <a href="#">
-                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span class="visually-hidden">Instagram</span>
+                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20.92 16a4.96 4.96 0 11-9.78-1.14h-.9v6.84h11.4v-6.84h-.9c.1.37.16.75.18 1.14z"/>
                   <path d="M16 18.66a2.66 2.66 0 10-.04-5.32 2.66 2.66 0 00.04 5.32zM21.68 10.3h-3.04v3.04h3.04V10.3z"/>
                   <path d="M16 0a16 16 0 100 32 16 16 0 000-32zm8 21.7a2.28 2.28 0 01-2.32 2.3h-11.4A2.29 2.29
@@ -395,7 +386,8 @@
             </li>
             <li>
               <a href="#">
-                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span class="visually-hidden">Twitter</span>
+                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 0a16 16 0 100 32 16 16 0 000-32zm7.94 12.81c-.25 6.52-3.46
                   10.83-11 10.7h-.48c-.45 0-4.55-.44-5.35-1.82a7.32 7.32 0 005.12-1.14c-1.05-.29-2.92-.46-3.25-2.85.41.16.86.2
                   1.3.12C9 17 7.53 16.3 7.61 14.17c.42.32.93.48 1.46.46-.77-.23-2.15-3.24-1-4.78 2
