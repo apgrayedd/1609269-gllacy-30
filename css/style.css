@@ -743,6 +743,12 @@
   cursor: pointer;
   outline: none;
 }
+.slider-button-radio:hover{
+  background-color: rgba(255,255,255,0.4);
+}
+.slider-button-radio:focus{
+  background-color: #ffffff;
+}
 .slider-radio-selected{
   background-color: #ffffff;
 }
