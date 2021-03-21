@@ -388,15 +388,16 @@
         </div>
       </div>
     </footer>
-    <div class="feedback-form display-none">
-      <p>Мы обязательно вам ответим!</p>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <input type="text" name="name" placeholder="Имя Фамилия" aria-label="Поле для ввода вашего имени и фамилии">
-        <input type="email" name="email" placeholder="email@example.com" aria-label="Поле для ввода вашего email">
-        <textarea rows = "10" cols = "45" type="" name="message" placeholder="В свободной форме" aria-label="Поле ввода вашего сообщения для обратной связи"></textarea>
-        <button type="submit" class="button">Отправить</button>
-      </form>
-      <button type="submit" class="feedback-close" aria-label="Закрыть форму обратной связи"></button>
-    </div>
+      <div class="feedback-form display-none">
+        <p>Мы обязательно вам ответим!</p>
+        <form action="https://echo.htmlacademy.ru" method="POST" class="feedback">
+          <input type="text" name="name" placeholder="Имя Фамилия" aria-label="Поле для ввода вашего имени и фамилии">
+          <input type="email" name="email" placeholder="email@example.com" aria-label="Поле для ввода вашего email">
+          <textarea rows = "10" cols = "45" type="" name="message" placeholder="В свободной форме" aria-label="Поле ввода вашего сообщения для обратной связи"></textarea>
+          <button type="submit" class="button">Отправить</button>
+        </form>
+        <button type="submit" class="feedback-close" aria-label="Закрыть форму обратной связи"></button>
+      </div>
+    <script src="js/feedback.js"></script>
   </body>
 </html>
