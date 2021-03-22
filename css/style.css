@@ -61,7 +61,9 @@
   margin: 0;
   padding: 0;
   padding-top: 9px;
-  font-family: "Roboto Bold";
+  font-family: 'Roboto Bold','Arial',sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   color: var(--white);
@@ -186,6 +188,7 @@
 }
 .contact-info{
   z-index: 1;
+  min-width: 167px;
   margin-left: auto;
 }
 .header-contact-info{
@@ -234,10 +237,8 @@
 }
 .catalog-selected{
   background: var(--catalog-selected);
-  color: var(--black);
-  min-height: 31px;
   border-radius: 26px;
-  text-decoration: none;
+  padding: 9px 13px 11px 13px;
 }
 .catalog-list{
   display: none;
@@ -245,7 +246,7 @@
 }
 .site-navigation .li-catalog:hover{
   height: 47px;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 .site-navigation .li-catalog:hover .catalog-list{
   position: absolute;
@@ -271,7 +272,12 @@
   border-bottom: 1px solid rgba(50, 50, 50, 0.2);
 }
 .catalog-item:nth-last-child(-n+4){
-  font-family: "Roboto";
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.catalog-item-selected{
+  background: #D07058;
 }
 .catalog-item a{
   padding: 8.5px 20px 8.5px 21px;
@@ -293,10 +299,10 @@
   color:var(--black);
   margin: 0;
 }
-.catalog-item a:hover{
+.catalog-item:not(.catalog-item-selected) a:hover{
   background: var(--header-menu-hover);
 }
-.catalog-item a:focus{
+.catalog-item:not(.catalog-item-selected) a:focus{
   background: var(--header-menu-focus);
 }
 .catalog-item-selected{
@@ -322,7 +328,9 @@
   min-height: 32px;
   font-size: 14px;
   line-height: 16px;
-  font-family: "Roboto Medium";
+  font-family: "Roboto Medium","Arial",sans-serif;
+  font-weight: 500;
+  font-style: normal;
   color: var(--white);
   text-decoration: none;
   background: var(--users-icon-background);
@@ -390,12 +398,16 @@
   text-decoration: none;
 }
 .login-link-form p{
-  font-family: "Roboto";
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   margin-bottom: 2px;
 }
 .login-link-form input{
-  font-family: "Roboto";
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 16px;
   height: 14px;
@@ -436,7 +448,9 @@
   min-width: 100px;
   height: 32px;
   white-space: nowrap;
-  font-family: "Roboto Medium";
+  font-family: "Roboto Medium","Arial",sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 14px;
   line-height: 16px;
   color: var(--white);
@@ -502,7 +516,9 @@
   border-bottom: 1px solid #CACAC7;
   font-size: 13px;
   line-height: 16px;
-  font-family: "Roboto Medium";
+  font-family: "Roboto Medium","Arial",sans-serif;
+  font-weight: 500;
+  font-style: normal;
   width: 484px;
   padding-bottom: 18px;
 }
@@ -559,7 +575,9 @@
 .basket-form p{
   font-size: 15px;
   line-height: 16px;
-  font-family: "Roboto Bold";
+  font-family: "Roboto Bold","Aria Bold",sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .basket-form img{
@@ -629,7 +647,9 @@
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
 }
 .searcher-form input{
-  font-family: "Roboto";
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   width: 296px;
   height: 14px;
   font-size: 14px;
@@ -655,7 +675,9 @@
 .breadcrumbs{
   font-size: 14px;
   line-height: 16px;
-  font-family: "Roboto Medium";
+  font-family: "Roboto Medium","Arial",sans-serif;
+  font-weight: 500;
+  font-style: normal;
   padding-left: 0;
   list-style: none;
   max-width: 900px;
@@ -696,6 +718,18 @@
 .slider{
   height: auto;
   margin-bottom: 33px;
+  position: relative;
+}
+.backlight{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(215, 242, 227, 0.75);
+  filter: blur(250px);
+  z-index: -1;
 }
 .slider-flex{
   display: flex;
@@ -756,7 +790,7 @@
   font-size: 60px;
   line-height: 60px;
   text-align: center;
-  max-width: 672px;
+  max-width: 700px;
   margin: 0;
   margin-bottom: 26px;
 }
@@ -777,6 +811,7 @@
 
 .shares-item-1,
 .shares-item-2{
+  position: relative;
   background-repeat: no-repeat;
   border-radius: 16px;
   width: 560px;
@@ -799,6 +834,7 @@
 }
 
 .shares button{
+  position: absolute;
   font-size: 18px;
   line-height: 24px;
   width: 191px;
@@ -807,8 +843,8 @@
 
   margin-top: auto;
   margin-left: auto;
-  margin-bottom: 22px;
-  margin-right: 22px;;
+  right: 22px;
+  bottom: 22px;
 }
 
 /*product*/
@@ -854,7 +890,9 @@
 .product-item h3{
   text-align: center;
   width: 267px;
-  font-family: "Roboto";
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin-top: 33px;
   margin-bottom: 0;
   font-size: 16px;
@@ -966,13 +1004,17 @@
   font-size: 24px;
   line-height: 30px;
   color: var(--black);
-  font-family: "Roboto Medium";
+  font-family: "Roboto Medium","Arial",sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .information-item p{
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto";
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding: 0;
 }
 /*Index columns*/
@@ -1017,7 +1059,9 @@
 }
 
 .news h2{
-  font-family: "Roboto";
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   margin: 0;
@@ -1047,7 +1091,9 @@
   order: -1;
 }
 .mailing input{
-  font-family: "Roboto";
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   line-height: 24px;
   display: block;
@@ -1092,7 +1138,9 @@
   padding-bottom: 35px;
 }
 .mail-form p{
-  font-family: "Roboto";
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   margin-bottom: 43px;
   margin-left: 20px;
@@ -1153,7 +1201,9 @@
 .info-and-map p:nth-of-type(1),
 .info-and-map p:nth-of-type(3),
 .info-and-map p:nth-of-type(4){
-  font-family: "Roboto";
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 20px;
 }
@@ -1190,7 +1240,9 @@
   right:50%;
   transform: translateX(-50%);
 
-  font-family: "Roboto";
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
   width: 441px;
@@ -1261,7 +1313,9 @@
   margin-bottom: 21px;
   font-size: 24px;
   line-height: 28px;
-  font-family: "Roboto Medium";
+  font-family: "Roboto Medium","Arial",sans-serif;
+  font-weight: 500;
+  font-style: normal;
   color: var(--black);
 }
 
@@ -1269,7 +1323,9 @@
   position: absolute;
   bottom:27px;
   right: 25px;
-  font-family: "Roboto Bold";
+  font-family: "Roboto Bold","Aria",sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 18px;
   line-height: 24px;
   width: 140px;
@@ -1310,14 +1366,18 @@
 .filter-option legend{
   font-size: 14px;
   line-height: 16px;
-  font-family: "Roboto";
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin-bottom: 7px;
 }
 /*Sorting*/
 .sorting{
   font-size: 16px;
   line-height: 18px;
-  font-family: "Roboto Medium";
+  font-family: "Roboto Medium","Arial",sans-serif;
+  font-weight: 500;
+  font-style: normal;
   position: relative;
   width: 196px;
   height: 36px;
@@ -1360,7 +1420,9 @@
 .filter-item legend {
   font-size: 14px;
   line-height: 16px;
-  font-family: "Roboto Medium";
+  font-family: "Roboto Medium","Arial",sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 .range-controls {
   position: relative;
@@ -1642,7 +1704,9 @@
   fill: var(--white);
 }
 .footer-info{
-  font-family: "Roboto";
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 13px;
   line-height: 18px;
   width: 327px;
@@ -1671,7 +1735,9 @@
   width: 162px;
 }
 .footer-info li:nth-of-type(1){
-  font-family: "Roboto Bold";
+  font-family: "Roboto Bold","Aria Bold",sans-serif;
+  font-weight: 700;
+  font-style: normal;
   position: relative;
 }
 .footer-info li:nth-of-type(1)::before{
@@ -1694,7 +1760,9 @@
 .footer-copyright p{
   margin: 0;
   margin-top: 8px;
-  font-family: "Roboto";
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 12px;
   line-height: 18px;
   color: var(--white);

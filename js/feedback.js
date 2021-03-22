@@ -8,7 +8,6 @@ const feedback_close = feedback.querySelector('.feedback-close');
 const body_tag = document.querySelector('body');
 let name_storage = localStorage.getItem("name");
 let email_storage = localStorage.getItem("email");
-let back_site;
 let check_error = function(input){
     if(!input.value){
         input.classList.add('feedback-error');
@@ -22,13 +21,13 @@ feedback_open.addEventListener('click', function(evt){
     if(name_storage && email_storage){
         feedback_name.value = name_storage;
         feedback_email.value = email_storage;
-        feedback_message.focus()
+        feedback_message.focus();
     } else if(name_storage){
         feedback_name.value = name_storage;
-        feedback_email.focus()
+        feedback_email.focus();
     } else{
         feedback_email.value = email_storage;
-        feedback_name.focus()
+        feedback_name.focus();
     }
     let back_site_div = document.createElement('a');
     back_site_div.classList.add('back-site');
@@ -38,14 +37,14 @@ feedback_open.addEventListener('click', function(evt){
 
     back_site_div.addEventListener('click', function(evt){
         evt.preventDefault();
-        feedback_name.classList.remove('feedback-error')
-        feedback_email.classList.remove('feedback-error')
-        feedback_message.classList.remove('feedback-error')
+        feedback_name.classList.remove('feedback-error');
+        feedback_email.classList.remove('feedback-error');
+        feedback_message.classList.remove('feedback-error');
         feedback.classList.add('display-none');
         body_tag.style = "overflow: visible;";
 
         let div_back = document.getElementsByClassName('back-site');
-        div_back[0].parentNode.removeChild(div_back[0])
+        div_back[0].parentNode.removeChild(div_back[0]);
     });
 });
 
@@ -63,27 +62,27 @@ feedback_popup.addEventListener('submit', function(evt){
 
 feedback_close.addEventListener('click',function(evt){
     evt.preventDefault();
-    feedback_name.classList.remove('feedback-error')
-    feedback_email.classList.remove('feedback-error')
-    feedback_message.classList.remove('feedback-error')
+    feedback_name.classList.remove('feedback-error');
+    feedback_email.classList.remove('feedback-error');
+    feedback_message.classList.remove('feedback-error');
     feedback.classList.add('display-none');
     body_tag.style = "overflow: visible;";
 
     let div_back = document.getElementsByClassName('back-site');
-    div_back[0].parentNode.removeChild(div_back[0])
+    div_back[0].parentNode.removeChild(div_back[0]);
 });
 
 window.addEventListener('keydown',function(evt){
     if(evt.keyCode === 27){
         if(!feedback.classList.contains('display-none')){
-            feedback_name.classList.remove('feedback-error')
-            feedback_email.classList.remove('feedback-error')
-            feedback_message.classList.remove('feedback-error')
+            feedback_name.classList.remove('feedback-error');
+            feedback_email.classList.remove('feedback-error');
+            feedback_message.classList.remove('feedback-error');
             feedback.classList.add('display-none');
             body_tag.style = "overflow: visible;";
 
             let div_back = document.getElementsByClassName('back-site');
-            div_back[0].parentNode.removeChild(div_back[0])
+            div_back[0].parentNode.removeChild(div_back[0]);
         }
     }
-})
+});
