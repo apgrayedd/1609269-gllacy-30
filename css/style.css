@@ -141,7 +141,7 @@
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: -50px;
+  margin-bottom: -38px;
 }
 .main-header-logo{
   width: 154px;
@@ -195,14 +195,13 @@
   font-size: 14px;
   line-height: 16px;
   text-align: end;
+  margin-top: 2px;
+  margin-bottom: 8px;
 }
-.header-contact-info a{
+.contacts-phone{
   font-size: 22px;
   line-height: 24px;
   text-decoration: none;
-}
-
-.header-contact-info .contacts-phone{
   color: var(--white);
 }
 /*Catalog*/
@@ -717,7 +716,7 @@
 /*Slider*/
 .slider{
   height: auto;
-  margin-bottom: 33px;
+  margin-bottom: 42px;
   position: relative;
 }
 .backlight{
@@ -739,8 +738,9 @@
 }
 .slider-flex img{
   height:582px;
-  width:639px;
-  margin-bottom: -267px;
+  width:644px;
+  margin-right: 7px;
+  margin-bottom: -270px;
 }
 .slider-option{
   display: flex;
@@ -750,16 +750,21 @@
   width: 100%;
 }
 .slider-button{
-  width: 278px;
-  min-height: 63px;
+  width: 261px;
+  min-height: 61px;
   font-size: 32px;
   line-height: 44px;
   border-radius: 70px;
+  margin-right: 14px;
+  padding-bottom: 2px;
+  letter-spacing: 0.05em;
+  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
 }
 .slider-radio{
   position: absolute;
   max-width: 240px;
   left: 0;
+  top: 20px;
 
   display: flex;
   flex-wrap: wrap;
@@ -767,8 +772,8 @@
 }
 .slider-button-radio{
   padding: 0;
-  width: 17px;
-  height: 17px;
+  width: 21px;
+  height: 21px;
   background-color: transparent;
   margin-right: 8px;
   margin-bottom: 8px;
@@ -790,9 +795,9 @@
   font-size: 60px;
   line-height: 60px;
   text-align: center;
-  max-width: 700px;
+  max-width: 672px;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
 }
 /*Shares*/
 .shares{
@@ -816,7 +821,7 @@
   border-radius: 16px;
   width: 560px;
   min-height: 229px;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 
   display: flex;
   flex-direction: column;
@@ -825,19 +830,24 @@
 .shares p{
   font-size: 18px;
   margin: 0;
-  margin:16px;
+  margin: 17px;
+  max-width: 514px;
 }
 
 .shares .heading{
   font-size: 35px;
   line-height: 41px;
+  margin-top: 14px;
+  margin-bottom: 0px;
 }
 
 .shares button{
   position: absolute;
   font-size: 18px;
   line-height: 24px;
-  width: 191px;
+  min-width: 164px;
+  padding-left: 22px;
+  padding-right: 22px;
   min-height: 48px;
   border-radius: 70px;
 
@@ -852,18 +862,22 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-left: -9px;
+  margin-right: -9px;
 }
 .product-item {
+  z-index: 0;
   width: 267px;
-  min-height: 385px;
+  min-height: 324px;
   position: relative;
   padding-left: 9.5px;
   padding-right: 9.5px;
   padding-top: 6px;
-  padding-bottom: 21px;
+  padding-bottom: 41px;
   display: block;
 }
 .product-item:nth-child(4n){
@@ -874,11 +888,22 @@
   display: block;
   text-decoration: none;
 }
-
 .product-item:hover{
-  background-color:  rgba(255, 255, 255, 0.5);
+  background-color:  rgba(255, 255, 255, 0.2);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.product-item:hover .back-product{
+  position: absolute;
+  margin-top: 21px;
+  background-color:  rgba(255, 255, 255, 0.2);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  height: 55px;
+  bottom: -55px;
+  right: 0;
+  width: 100%;
 }
 .product-item p{
   width: 267px;
@@ -893,15 +918,16 @@
   font-family: "Roboto","Arial",sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-top: 33px;
+  margin-top: 28px;
   margin-bottom: 0;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
 }
 .product-item .product-name{
   display: inline;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Roboto","Arial",sans-serif;
+  font-weight: 400;
 }
 .product-item span:not(.product-name){
   font-size: 30px;
@@ -919,16 +945,13 @@
   height: 267px;
   width: 267px;
   margin-bottom: -65.7px;
-  background-color: #F8F7F4;
   object-fit: contain;
 }
 .product-item button{
   display: none;
-  position: static;
-  margin-bottom: 0;
-  margin-top: 11px;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  bottom: 21px;
+  left: 46px;
   width: 200px;
   height: 44px;
   box-shadow: 0px 1px 2px #AC1000;
@@ -950,7 +973,7 @@
   background-image: url("../img/pattern.png");
   border-radius: 16px;
   margin-bottom: 40px;
-  padding-top: 26px;
+  padding-top: 23px;
   padding-left: 20px;
 }
 .information-list{
@@ -960,7 +983,7 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  padding-left: 49px;
+  padding-left: 55px;
   padding-right: 23px;
   list-style: none;
 }
@@ -972,7 +995,7 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   left:-55px;
-  top:-7px;
+  top:-8px;
 }
 .information-item:nth-child(1):before{
   background-image:url("../img/ice_cream_icon.svg");
@@ -988,16 +1011,16 @@
 }
 .information-item{
   position: relative;
-  width: 485px;
-  margin-bottom: 33px;
+  width: 482px;
+  margin-bottom: 23px;
 }
 .information-item:nth-last-child(1),
 .information-item:nth-last-child(2){
-  margin-bottom: 36px;
+  margin-bottom: 31px;
 }
 .information p{
   margin:0;
-  padding-bottom: 21px;
+  padding-bottom: 15px;
 }
 .information p,
 .information h2{
@@ -1048,14 +1071,13 @@
   line-height: 30px;
   max-width: 287px;
   margin-left: 20px;
-  margin-top: 15px;
+  margin-top: 2px;
   margin-bottom: 0;
 }
 .news a{
   color: var(--black);
   display: inline;
-  border-bottom: 2px solid #353535;
-  text-decoration: none;
+  text-decoration: underline #353535;
 }
 
 .news h2{
@@ -1067,7 +1089,7 @@
   margin: 0;
 
   margin-left:20px;
-  margin-top: 23px;
+  margin-top: 17px;
 }
 
 /*Mailing*/
@@ -1142,7 +1164,7 @@
   font-weight: 400;
   font-style: normal;
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 38px;
   margin-left: 20px;
   width: 512px;
 }
@@ -1154,7 +1176,7 @@
 /*Map*/
 .map{
   width: 100%;
-  height: 500px;
+  height: 428px;
   background-color: #849D8F;
 }
 .info-and-map{
@@ -1163,7 +1185,7 @@
 .iframe_map{
   border: none;
   width: 100%;
-  height: 500px;
+  height: 428px;
 }
 .map_info{
   position: absolute;
@@ -1667,7 +1689,7 @@
 /*Footer*/
 .main-footer{
   min-height: 103px;
-  padding-top:60px;
+  padding-top:20px;
   padding-bottom: 26px;
   padding-left: 29px;
   padding-right: 27px;
@@ -1682,7 +1704,7 @@
 }
 .footer-social ul{
   display: flex;
-  max-width: 167px;
+  max-width: 170px;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 0;
