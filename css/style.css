@@ -248,7 +248,7 @@
   height: 47px;
   margin-bottom: 7px;
 }
-.site-navigation .li-catalog:hover .catalog-list{
+.li-catalog:hover .catalog-list{
   position: absolute;
   width: 143px;
   min-height: 171px;
@@ -703,7 +703,7 @@
 .breadcrumbs li:last-child{
   margin-right: 0;
 }
-.breadcrumbs li a{
+.breadcrumbs a{
   text-decoration: none;
 }
 .breadcrumbs a[href]{
@@ -1308,6 +1308,11 @@
 .feedback-form textarea.feedback-error{
   border: 1px solid red;
 }
+.feedback-form textarea.feedback-error:hover{
+  border: 2px solid rgba(178, 178, 178, 0.52);
+  height: 120px;
+}
+
 .feedback-form p{
   margin: 0;
   margin-bottom: 21px;
@@ -1641,7 +1646,7 @@
 .pagination-next svg{
   fill:white;
 }
-.pagination-list .selected-pagination a{
+.selected-pagination a{
   background-color: var(--white);
 }
 .pagination-list a:not([href]){
@@ -1650,11 +1655,11 @@
 .pagination-back>a:not([href])>svg {
   opacity: 0.2;
 }
-.pagination-list li a[href]:hover{
+.pagination-item-a[href]:hover{
   background: rgba(255, 255, 255, 0.2);
 }
-.pagination-list li a[href]:focus,
-.pagination-list li a[href]:focus svg{
+.pagination-item-a[href]:focus,
+.pagination-item-a[href]:focus svg{
   background: var(--white);
   color: var(--black);
   fill: var(--black);
@@ -1683,7 +1688,7 @@
   padding-left: 0;
   list-style: none;
 }
-.footer-social ul li{
+.footer-social li{
   margin-bottom: 10px;
 }
 .footer-social a{
