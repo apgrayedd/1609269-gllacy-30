@@ -7,7 +7,7 @@
         url("../fonts/roboto.woff2") format("woff2"),
         url("../fonts/roboto.woff") format("woff");
 }
-@font-face {
+@font-face{
   font-family: "Roboto Medium";
   font-weight: 500;
   font-style: normal;
@@ -15,7 +15,7 @@
        url("../fonts/robotomedium.woff2") format("woff2"),
        url("../fonts/robotomedium.woff") format("woff");
 }
-@font-face {
+@font-face{
   font-family: "Roboto Bold";
   font-weight: 700;
   font-style: normal;
@@ -760,8 +760,8 @@
   width: 100%;
 }
 .slider-button{
-  width: 261px;
-  min-height: 61px;
+  width: 239px;
+  min-height: 53px;
   font-size: 32px;
   line-height: 44px;
   border-radius: 70px;
@@ -769,6 +769,9 @@
   padding-bottom: 2px;
   letter-spacing: 0.05em;
   box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  padding-top: 8px;
+  padding-left: 22px;
+  text-decoration: none;
 }
 .slider-radio{
   position: absolute;
@@ -845,19 +848,27 @@
   margin-top: 14px;
   margin-bottom: 0px;
 }
-.shares button{
+.shares .button{
+  display: block;
   position: absolute;
   font-size: 18px;
   line-height: 24px;
-  min-width: 164px;
+  text-decoration: none;
+  padding-top: 10px;
   padding-left: 22px;
   padding-right: 22px;
-  min-height: 48px;
+  min-height: 38px;
   border-radius: 70px;
   margin-top: auto;
   margin-left: auto;
   right: 22px;
   bottom: 22px;
+}
+.shares .button:nth-child(1){
+  width: 164px;
+}
+.shares .button:nth-child(2){
+  width: 191px;
 }
 /*product*/
 .product-list{
@@ -871,7 +882,7 @@
   margin-left: -9px;
   margin-right: -9px;
 }
-.product-item {
+.product-item{
   z-index: 0;
   width: 267px;
   min-height: 324px;
@@ -1444,14 +1455,14 @@
   width: 218px;
   min-height: 36px;
 }
-.filter-item legend {
+.filter-item legend{
   font-size: 14px;
   line-height: 16px;
   font-family: "Roboto Medium","Arial","sans-serif";
   font-weight: 500;
   font-style: normal;
 }
-.range-controls {
+.range-controls{
   position: relative;
   height: 20px;
   padding-top: 16px;
@@ -1460,16 +1471,16 @@
   padding-right: 21px;
   padding-left: 21px;
 }
-.range-controls .scale {
+.range-controls .scale{
   height: 2px;
   background: rgba(248, 247, 244, 0.5);
 }
-.range-controls .bar {
+.range-controls .bar{
   width: 70%;
   height: 2px;
   background: #F8F7F4;
 }
-.range-controls .toggle {
+.range-controls .toggle{
   width: 4px;
   height: 4px;
   padding: 0;
@@ -1481,10 +1492,10 @@
   left: 0;
   cursor: pointer;
 }
-.range-controls .toggle-min {
+.range-controls .toggle-min{
   left: 18px;
 }
-.range-controls .toggle-max {
+.range-controls .toggle-max{
   left: 136px;
 }
 /*Filter-radio*/
@@ -1678,7 +1689,7 @@
 .pagination-list a:not([href]){
   color: var(--black);
 }
-.pagination-back>a:not([href])>svg {
+.pagination-back>a:not([href])>svg{
   opacity: 0.2;
 }
 .pagination-item{

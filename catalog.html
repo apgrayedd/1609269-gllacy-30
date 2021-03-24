@@ -5,7 +5,6 @@
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
-
     <link rel="icon" href="favicon/favicon.ico">
     <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
@@ -54,7 +53,8 @@
                 </a>
                 <div class="searcher-form">
                   <form action="https://echo.htmlacademy.ru" method="GET">
-                    <input type="text" name="searcher" placeholder="Крем-брюле">
+                    <label class="visually-hidden" for="searcher">Поиск</label>
+                    <input type="text" name="searcher" id="searcher" placeholder="Крем-брюле">
                   </form>
                 </div>
               </div>
@@ -71,8 +71,10 @@
                 </a>
                 <div class="login-link-form">
                   <form action="https://echo.htmlacademy.ru" method="POST">
-                    <input type="email" name="email" placeholder="email@example.com">
-                    <input type="password" name="password" placeholder="••••••">
+                    <label class="visually-hidden" for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="email@example.com">
+                    <label class="visually-hidden" for="password">Email</label>
+                    <input id="password" type="password" name="password" placeholder="••••••">
                     <button type="submit" class="button">Войти</button>
                     <div>
                       <p><a href="#">Забыли пароль?</a></p>
@@ -149,7 +151,8 @@
             <fieldset class="filter-option ">
                 <legend>Сортировка:</legend>
                 <div class="sorting-menu">
-                  <select name="sorting" class="sorting">
+                  <label class="visually-hidden" for="sorting">Сортировка</label>
+                  <select id="sorting" name="sorting" class="sorting">
                       <option value="popularity">по популярности</option>
                       <option value="ascending">сначала недорогие</option>
                       <option value="descending">сначала дорогие</option>

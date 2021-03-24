@@ -5,7 +5,6 @@
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
-
     <link rel="icon" href="favicon/favicon.ico">
     <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
@@ -54,7 +53,8 @@
                 </a>
                 <div class="searcher-form">
                   <form action="https://echo.htmlacademy.ru" method="GET">
-                    <input type="text" name="searcher" placeholder="Крем-брюле">
+                    <label class="visually-hidden" for="searcher">Поиск</label>
+                    <input type="text" name="searcher" id="searcher" placeholder="Крем-брюле">
                   </form>
                 </div>
               </div>
@@ -71,8 +71,10 @@
                 </a>
                 <div class="login-link-form">
                   <form action="https://echo.htmlacademy.ru" method="POST">
-                    <input type="email" name="email" placeholder="email@example.com">
-                    <input type="password" name="password" placeholder="••••••">
+                    <label class="visually-hidden" for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="email@example.com">
+                    <label class="visually-hidden" for="password">Email</label>
+                    <input id="password" type="password" name="password" placeholder="••••••">
                     <button type="submit" class="button">Войти</button>
                     <div>
                       <p><a href="#">Забыли пароль?</a></p>
@@ -115,7 +117,7 @@
               <button type="button" class="slider-button-radio slider-button-2" aria-label="Второй слайд"></button>
               <button type="button" class="slider-button-radio slider-button-3 slider-radio-selected" aria-label="Третий слайд"></button>
             </div>
-            <button type="button" class="button slider-button">Давайте оба!</button>
+            <a href="#" class="button slider-button">Давайте оба!</a>
           </div>
         </div>
       </section>
@@ -126,14 +128,14 @@
           <p class="heading">Малинка даром!</p>
           <p>При покупке 2 кг любого фруктового мороженого, добавим
             в ваш заказ банку малинового варенья бесплатно.</p>
-          <button type="button" class="button">Хочу варенье!</button>
+          <a href="#" class="button">Хочу варенье!</a>
         </div>
         <div class="shares-item-2">
           <h3 class="visually-hidden">Акция:"Шоколадки даром"</h3>
           <p class="heading">Шоколадки даром!</p>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку
             вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <button type="button" class="button">Хочу шоколадки!</button>
+          <a href="#" class="button">Хочу шоколадки!</a>
         </div>
       </section>
       <section class="product">
@@ -268,7 +270,8 @@
                 всего самого вкусного, что у нас происходит. Обещаем не спамить
                 и не слать всякой ненужной ерунды. Честно =)</p>
               <form action="https://echo.htmlacademy.ru" method="POST">
-                <input type="text" name="mailing" placeholder="email@example.com">
+                <label class="visually-hidden" for="mailing">Email</label>
+                <input type="text" id="mailing" name="mailing" placeholder="email@example.com">
                 <button type="submit" class="button">Отправить</button>
               </form>
           </div>
@@ -288,7 +291,7 @@
             <a href="#" class="button">Форма обратной связи</a>
           </div>
         </div>
-        <iframe class="iframe_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533207!2d30.320858716352063!3d59.938716481876256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1615443431737!5m2!1sru!2s" width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="iframe_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533207!2d30.320858716352063!3d59.938716481876256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1615443431737!5m2!1sru!2s" allowfullscreen="" loading="lazy"></iframe>
       </section>
     </div>
     <footer class="main-footer">
